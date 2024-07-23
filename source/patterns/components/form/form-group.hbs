@@ -1,0 +1,9 @@
+<div class="c-form-group">
+    {{#if label}}
+    {{render '@label' label merge=true}}
+    {{/if}}
+    {{render '@input--default' input merge=true}}
+    {{#if hint}}
+    {{render '@hint' hint merge=true}}
+    {{/if}}
+</div>

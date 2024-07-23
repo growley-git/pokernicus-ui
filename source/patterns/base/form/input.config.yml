@@ -1,0 +1,28 @@
+order: 1
+context:
+  id: form-input
+  type: text
+  name: form-input
+  value: null
+  # min: 0
+  # max: 999
+  # step: 1
+  # required: true
+  # readonly: false
+  # minlength: 0,
+  # maxlength: 256
+  # pattern: Regex Pattern...
+  placeholder: Ipsum esse amet...
+variants:
+  - name: url
+    context:
+      type: url
+      placeholder: https://myurl.com
+  - name: email
+    context:
+      type: email
+      placeholder: loremipsum@dolor.com
+  - name: password
+    context:
+      type: password
+      placeholder: Password

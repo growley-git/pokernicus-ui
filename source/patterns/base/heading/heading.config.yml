@@ -1,0 +1,24 @@
+collated: true
+context:
+  tag: h1
+  text: Sunt ipsum velit aliquip consectetur.
+variants:
+  - name: H1
+    hidden: true
+    context:
+      tag: h1
+  - name: H2
+    context:
+      tag: h2
+  - name: H3
+    context:
+      tag: h3
+  - name: H4
+    context:
+      tag: h4
+  - name: H5
+    context:
+      tag: h5
+  - name: H6
+    context:
+      tag: h6

@@ -1,0 +1,31 @@
+<table class="a-table">
+    {{#if thead}}
+    <thead>
+        <tr>
+            {{#thead}}
+            <th>{{{text}}}</th>
+            {{/thead}}
+        </tr>
+    </thead>
+    {{/if}}
+    {{#if tbody}}
+    <tbody>
+        {{#tbody}}
+        <tr>
+            {{#rows}}
+            <td>{{{text}}}</td>
+            {{/rows}}
+        </tr>
+        {{/tbody}}
+    </tbody>
+    {{/if}}
+    {{#if tfoot}}
+    <tfoot>
+        <tr>
+            {{#tfoot}}
+            <th>{{{text}}}</th>
+            {{/tfoot}}
+        </tr>
+    </tfoot>
+    {{/if}}
+</table>

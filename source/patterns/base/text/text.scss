@@ -1,0 +1,15 @@
+.a-text {
+    $this: &;
+
+    &--base {
+        font-size: rem(16);
+    }
+
+    &--lead {
+        font-size: rem(18);
+    }
+
+    &--small {
+        font-size: rem(12);
+    }
+}

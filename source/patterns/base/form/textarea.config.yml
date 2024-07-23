@@ -1,0 +1,13 @@
+context:
+  id: form-input
+  type: text
+  name: form-input
+  value: null
+  # min: 0
+  # max: 999
+  # step: 1
+  # required: true
+  # readonly: false
+  # minlength: 0,
+  # maxlength: 256
+  placeholder: Anim ipsum enim elit sint sunt minim ipsum...

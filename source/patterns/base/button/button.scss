@@ -1,0 +1,62 @@
+$button-font-size: 16 !default;
+$button-border-radius: 4 !default;
+$button-padding-block: 8 !default;
+$button-padding-inline: 18 !default;
+
+
+%link {
+    appearance: none;
+    border: none;
+    box-shadow: none;
+    background-color: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+%button {
+    @extend %link;
+    border: 1px solid transparent;
+    border-radius: rem($button-border-radius);
+    padding-block: rem($button-padding-block);
+    padding-inline: rem($button-padding-inline);
+    font-size: rem($button-font-size);
+}
+
+.a-btn {
+    $this: &;
+
+    @extend %link;
+
+    &--primary,
+    &--secondary,
+    &--success,
+    &--warning,
+    &--danger{
+        @extend %button;
+        border-color: lightgray;
+        background-color: lightgray;
+        color: black;
+
+        &:hover {
+            border-color: black;
+            background-color: black;
+            color: lightgray;
+            text-decoration: none;
+        }
+    }
+
+    &--disabled {
+        pointer-events: none;
+    }
+}

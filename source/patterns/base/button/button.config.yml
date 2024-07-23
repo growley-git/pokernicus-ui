@@ -1,0 +1,51 @@
+context:
+  tag: a
+  href: '#'
+  label: Consectetur Cconsequat
+variants:
+  - name: default
+    context:
+      label: Veniam Culpa Do!
+      modifier: default
+  - name: icon
+    context:
+      label: Veniam Culpa Do!
+      icon:
+        name: account-heart
+      modifier: icon
+  - name: icon-left
+    context:
+      label: Veniam Culpa Do!
+      modifier: icon-left
+      icon-left:
+        name: arrow-left
+  - name: icon-right
+    context:
+      label: Veniam Culpa Do!
+      modifier: icon-right
+      icon-right:
+        name: arrow-right
+  - name: primary
+    context:
+      label: Veniam Culpa Do!
+      modifier: primary
+  - name: secondary
+    context:
+      label: Veniam Culpa Do!
+      modifier: secondary
+  - name: success
+    context:
+      label: Veniam Culpa Do!
+      modifier: success
+  - name: warning
+    context:
+      label: Veniam Culpa Do!
+      modifier: warning
+  - name: danger
+    context:
+      label: Veniam Culpa Do!
+      modifier: danger
+  - name: disabled
+    context:
+      label: Veniam Culpa Do!
+      modifier: disabled

@@ -1,0 +1,89 @@
+$util-ticks: 64 !default;
+
+@for $i from 0 through $util-ticks {
+    .m-#{$i} {
+        margin: rem($i);
+        &-n {
+            margin: rem($i * -1);
+        }
+    }
+
+    .p-#{$i} {
+        padding: rem($i);
+    }
+}
+
+@include breakpoint(sm) {
+    @for $i from 0 through $util-ticks {
+        .m-sm-#{$i} {
+            margin: rem($i);
+            &-n {
+                margin: rem($i * -1);
+            }
+        }
+
+        .p-sm-#{$i} {
+            padding: rem($i);
+        }
+    }
+}
+
+@include breakpoint(md) {
+    @for $i from 0 through $util-ticks {
+        .m-md-#{$i} {
+            margin: rem($i);
+            &-n {
+                margin: rem($i * -1);
+            }
+        }
+
+        .p-md-#{$i} {
+            padding: rem($i);
+        }
+    }
+}
+
+@include breakpoint(lg) {
+    @for $i from 0 through $util-ticks {
+        .m-lg-#{$i} {
+            margin: rem($i);
+            &-n {
+                margin: rem($i * -1);
+            }
+        }
+
+        .p-lg-#{$i} {
+            padding: rem($i);
+        }
+    }
+}
+
+@include breakpoint(xl) {
+    @for $i from 0 through $util-ticks {
+        .m-xl-#{$i} {
+            margin: rem($i);
+            &-n {
+                margin: rem($i * -1);
+            }
+        }
+
+        .p-xl-#{$i} {
+            padding: rem($i);
+        }
+    }
+}
+
+@include breakpoint(xxl) {
+    @for $i from 0 through $util-ticks {
+        .m-xxl-#{$i} {
+            margin: rem($i);
+            &-n {
+                margin: rem($i * -1);
+            }
+        }
+
+        .p-xxl-#{$i} {
+            padding: rem($i);
+        }
+    }
+}

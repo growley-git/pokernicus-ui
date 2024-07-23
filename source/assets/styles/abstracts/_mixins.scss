@@ -1,0 +1,14 @@
+@mixin breakpoint($mq: false, $dir: 'up') {
+    @if $mq and map-has-key($breakpoint, $mq) {
+        @media screen and (min-width: map-get($breakpoint, $mq)) {
+            @content;
+        }
+    }
+    @else {
+        @each $bp, $size in $breakpoint {
+            @media screen and (min-width: map-get($breakpoint, $bp)) {
+                @content;
+            }
+        }
+    }
+}

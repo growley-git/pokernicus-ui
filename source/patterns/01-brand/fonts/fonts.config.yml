@@ -1,0 +1,16 @@
+order: 1
+context:
+  alpha: abcdefghijklmnopqrstuvwxyz0123456789
+variants:
+  - name: serif
+    context:
+      alpha: abcdefghijklmnopqrstuvwxyz0123456789
+      modifier: serif
+  - name: mono
+    context:
+      alpha: abcdefghijklmnopqrstuvwxyz0123456789
+      modifier: mono
+  - name: cursive
+    context:
+      alpha: abcdefghijklmnopqrstuvwxyz0123456789
+      modifier: cursive
