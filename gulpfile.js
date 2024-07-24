@@ -309,7 +309,7 @@ exports.build = series(
         // copyVendorScripts,
     ),
     stylesBuild,
-    // scriptsBuild,
+    scriptsBuild,
     fractalBuild
 )
 
