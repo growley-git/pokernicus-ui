@@ -1,0 +1,32 @@
+context:
+    src: //placehold.co/800x450?text=16:9
+    alt: 16x9
+    cap: '<strong>Caption:</strong> Mollit mollit ipsum qui anim adipisicing fugiat tempor tempor reprehenderit esse mollit ullamco.'
+
+variants:
+    -
+        name: 16x9
+        context:
+            src: //placehold.co/800x450?text=16:9
+            alt: 16x9
+            cap: null
+    -
+        name: 1x1
+        context:
+            src: //placehold.co/400x400?text=1:1
+            alt: 1x1
+            cap: null
+    -
+        name: avatar
+        context:
+            src: //placehold.co/64x64?text=P
+            alt: avatar
+            cap: '&spades;POK3RN1CUS&spades;'
+            modifier: avatar
+    -
+        name: responsive
+        context:
+            src: //placehold.co/800x450?text=16:9
+            alt: 16x9
+            cap: null
+            modifier: responsive

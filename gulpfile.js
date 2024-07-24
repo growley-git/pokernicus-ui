@@ -67,9 +67,9 @@ fractal.web.set('builder.dest', path.join(__dirname, './dist'))
 fractal.web.theme(mandelbrot({
     skin: {
         name: 'default',
-        links: '#446CC9',
-        accent: '#161F50',
-        complement: '#FFFFFF',
+        // links: '#446CC9',
+        // accent: '#161F50',
+        // complement: '#FFFFFF',
     },
     styles: ['default', '/css/mandelbrot.css'],
     // favicon: '/images/favicon.ico',
@@ -110,7 +110,68 @@ fractal.components.set('statuses', {
         color: "green"
     }
 })
-fractal.components.engine(handlebars)
+fractal.components.set('default.context', {
+    'siteName': 'FooCorp',
+    'players': [
+        // {
+        //     firstName: '',
+        //     lastName: '',
+        //     email: '',
+        //     dob: '',
+        //     username: '',
+        //     password: '',
+        //     chips: 0
+        // },
+        {
+            firstName: 'Sheldon',
+            lastName: 'Allen',
+            email: '',
+            dob: '9/4/1974',
+            username: 'shellen',
+            password: 'massachusetts',
+            chips: 14823
+        },
+        {
+            firstName: 'John',
+            lastName: 'Jackson',
+            email: '',
+            dob: '2/14/1986',
+            username: 'johnnyb',
+            password: 'zooyork',
+            chips: 343852
+        },
+        {
+            firstName: 'Steve',
+            lastName: 'Dyer',
+            email: '',
+            dob: '11/28/1977',
+            username: 'dyermaker',
+            password: 'myverona',
+            chips: 2732390
+        },
+        {
+            firstName: 'Yoko',
+            lastName: 'Terrill',
+            email: '',
+            dob: '11/1/1956',
+            username: 'rllingstones',
+            password: 'cutpiece',
+            chips: 1238
+        },
+        {
+            firstName: 'Donald',
+            lastName: 'Flanagan',
+            email: '',
+            dob: '12/19/1962',
+            username: 'flanneldon',
+            password: 'checkeredboii',
+            chips: 13088232
+        },
+    ]
+});
+fractal.components.set('default.status', 'prototype')
+fractal.components.set('ext', '.nunj')
+fractal.components.engine('@frctl/nunjucks')
 
 const cleanPublic = function () {
     return src('./public', { allowEmpty: true, read: false })

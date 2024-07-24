@@ -1,0 +1,4 @@
+<div class="form-control{% if modifier %} form-control--{{modifier}}{% endif %}{% if class %} {{class}}{% endif %}">
+    <label class="form-control__label">Tempor enim</label>
+    {% render '@input', { class: 'form-control__input' }, true %}
+</div>

@@ -1,0 +1,7 @@
+.event-list {
+    $this: &;
+
+    &__item {
+        margin-bottom: rem(8);
+    }
+}

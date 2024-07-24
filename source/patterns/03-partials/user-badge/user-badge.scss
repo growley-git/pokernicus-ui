@@ -1,0 +1,22 @@
+.user-badge {
+    $this: &;
+
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: rem(2) rem(8);
+    border-radius: rem(8);
+    border: 2px solid gray;
+
+    &__avatar {
+        flex: 0 1 auto;
+        margin-right: rem(8);
+    }
+
+    &__info {
+        display: flex;
+        flex: 1 1 100%;
+        flex-direction: column;
+    }
+}

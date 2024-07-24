@@ -1,13 +1,31 @@
-@mixin breakpoint($mq: false, $dir: 'up') {
+@use "sass:map";
+
+@mixin breakpoint($mq: false, $dir: up) {
     @if $mq and map-has-key($breakpoint, $mq) {
-        @media screen and (min-width: map-get($breakpoint, $mq)) {
-            @content;
+        @if $dir == up {
+            @media screen and (min-width: map.get($breakpoint, $mq)) {
+                @content;
+            }
+        }
+        @else {
+            @media screen and (max-width: map.get($breakpoint, $mq)) {
+                @content;
+            }
         }
     }
     @else {
-        @each $bp, $size in $breakpoint {
-            @media screen and (min-width: map-get($breakpoint, $bp)) {
-                @content;
+        @if $dir == up {
+            @each $bp, $size in $breakpoint {
+                @media screen and (min-width: map.get($breakpoint, $bp)) {
+                    @content;
+                }
+            }
+        }
+        @else {
+            @each $bp, $size in $breakpoint {
+                @media screen and (max-width: map.get($breakpoint, $bp)) {
+                    @content;
+                }
             }
         }
     }

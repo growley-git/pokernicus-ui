@@ -1,0 +1,55 @@
+.table {
+    $this: &;
+
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+
+    &__caption {
+        text-align: left;
+    }
+    
+    &__head {}
+    
+    &__body {}
+    
+    &__foot {}
+    
+    &__row {}
+    
+    &__heading {}
+    
+    &__cell {}
+
+    &--bordered {
+        border: rem(1) solid black;
+        td, th {
+            border: rem(1) solid black;
+        }
+    }
+
+    &--stripped {
+        tbody {
+            tr {
+                &:nth-of-type(odd) {
+                    background-color: gray;
+                }
+                &:nth-of-type(even) {
+                    background-color: lightgray;
+                }
+            }
+        }
+    }
+
+    &--hoverable {
+        tbody {
+            tr {
+                background-color: transparent;
+                &:hover {
+                    background-color: gray;
+                }
+            }
+        }
+    }
+}

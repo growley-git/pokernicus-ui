@@ -1,0 +1,31 @@
+context:
+    id: input
+    class: null
+    type: text
+    value: null
+    readonly: false
+    required: false
+    pattern: null
+    placeholder: Sint cillum nulla reprehenderit...
+    min: null
+    max: null
+    step: null
+    minlength: null
+    maxlength: null
+
+variants:
+    -
+        name: date
+        context:
+            type: date
+    -
+        name: email
+        context:
+            type: email
+            placeholder: lorem@ipsum.com
+    -
+        name: password
+        context:
+            type: password
+            value: expialidocious  
+            toggle: true

@@ -1,0 +1,37 @@
+.form-control {
+    $this: &;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &__label {
+        margin-bottom: rem(4);
+        white-space: nowrap;
+    }
+
+    &__input {
+        flex: 1 1 100%;
+        margin-bottom: rem(4);
+        max-width: 100%;
+        width: 100%;
+    }
+
+    &--horizontal {
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        margin-bottom: rem(4);
+
+        #{$this}__label {
+            margin-right: rem(8);
+            margin-bottom: 0;
+        }
+
+        #{$this}__input {
+            margin-bottom: 0;
+        }
+    }
+
+}

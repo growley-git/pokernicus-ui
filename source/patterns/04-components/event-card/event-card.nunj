@@ -1,0 +1,11 @@
+<div class="event-card">
+    {% render '@image--1x1', { modifier: 'rounded', class: 'event-card__image' }, true %}
+    <div class="event-card__info">
+        <span>{{location}}</span>
+        <span>{{address}}</span>
+        <span>{{title}}</span>
+        <div class="event-card__actions">
+            {% render '@button--primary', button, true %}
+        </div>
+    </div>
+</div>

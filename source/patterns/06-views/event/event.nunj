@@ -1,0 +1,18 @@
+<div class="event">
+    <div class="event__hero">
+        <div class="event__hero-background">
+            {% render '@image--16x9', { class: 'image--responsive' }, true %}
+        </div>
+        <div class="event__hero-content">
+            <h1>Pokernicus BOUNTY HUNTER</h1>
+            <h2>Eds&rsquo; Hideaway</h2>
+            <h3>May 4th @ 8:00PM</h3>
+            <h4>1234 W Fifth Street, Edgewater, CO 80033</h4>
+        </div>
+    <div>
+    <div class="event__info">
+        {% render '@button--primary' %}
+        {% render '@button--primary' %}
+        {% render '@button--primary' %}
+    </div>
+</div>

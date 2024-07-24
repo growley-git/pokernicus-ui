@@ -1,0 +1,7 @@
+context:
+    test: null
+variants:
+    -
+        name: horizontal
+        context:
+            modifier: horizontal

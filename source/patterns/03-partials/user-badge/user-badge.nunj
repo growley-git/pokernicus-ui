@@ -1,0 +1,17 @@
+<div class="user-badge">
+    {% render '@image--avatar', {
+        alt: username + ' avatar',
+        cap: null,
+        class: 'image--avatar--sm user-badge__avatar'
+    }, true %}
+    <div class="user-badge__info">
+        <span class="user-badge__username">
+            {% render '@icon', { icon: 'mdi-account' }, true %}
+            {{username}}
+        </span>
+        <span class="user-badge__chips">
+            {% render '@icon', { icon: 'mdi-crown-circle' }, true %}
+            {{chips}}
+        </span>
+    </div>
+</div>

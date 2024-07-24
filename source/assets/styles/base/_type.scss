@@ -1,40 +1,54 @@
-h1,h2,h3,h4,h5,h6,p,ol,ul,li,blockquote {
-    line-height: 1.25;
-    margin: rem(8) 0 rem(14);
-    padding: 0;
-}
+@use "sass:map";
 
 h1 {
-    font-size: rem(72);
+    font-size: map.get($font, size-xxxl);
 }
 
 h2 {
-    font-size: rem(60);
+    font-size: map.get($font, size-xxl);
 }
 
 h3 {
-    font-size: rem(48);
+    font-size: map.get($font, size-xl);
 }
 
 h4 {
-    font-size: rem(34);
+    font-size: map.get($font, size-lg);
 }
 
 h5 {
-    font-size: rem(24);
+    font-size: map.get($font, size-md);
 }
 
 h6 {
-    font-size: rem(20);
+    font-size: map.get($font, size-base);
 }
 
-p {
-    font-size: rem(16);
-}
-
-
+p,
+li,
+em,
+strong,
 blockquote {
-    font-size: rem(24);
-    font-style: italic;
-    max-width: 75%;
+    font-size: map.get($font, size-base);
+}
+
+small {
+    font-size: map.get($font, size-sm);
+}
+
+strong {
+    font-weight: bold;
+}
+
+ol,
+ul {
+    padding-inline-start: rem(20);
+}
+
+.list {
+    &--unstyled {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
 }

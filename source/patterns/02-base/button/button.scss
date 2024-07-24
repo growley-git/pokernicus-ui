@@ -1,0 +1,35 @@
+%btn {
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.btn {
+    $this: &;
+
+    @extend %btn;
+
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
+
+    &--primary,
+    &--secondary,
+    &--success,
+    &--warning,
+    &--danger,
+    &--info {
+        background-color: lightpink;
+        padding: rem(8) rem(12);
+
+        &:hover,
+        &:focus {
+            background-color: salmon;
+        }
+    }
+}

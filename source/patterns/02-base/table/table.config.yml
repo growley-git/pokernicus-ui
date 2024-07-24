@@ -1,0 +1,19 @@
+context:
+    modifier: null
+variants:
+    -
+        name: stripped
+        context:
+            modifier: stripped
+    -
+        name: hoverable
+        context:
+            modifier: hoverable
+    -
+        name: bordered
+        context:
+            modifier: bordered
+    -
+        name: all
+        context:
+            modifier: stripped table--hoverable table--bordered

@@ -1,0 +1,17 @@
+<input
+    id="{{id}}"
+    class="input{% if modifier %} input--{{modifier}}{% endif %}{% if class %} {{class}}{% endif %}"
+    {% if type %}type="{{type}}"{% endif %}
+    {% if value %}value="{{value}}"{% endif %}
+    {% if readonly %}readonly="{{readonly}}"{% endif %}
+    {% if required %}required="{{required}}"{% endif %}
+    {% if pattern %}pattern="{{pattern}}"{% endif %}
+    {% if placeholder %}placeholder="{{placeholder}}"{% endif %}
+    {% if min %}min="{{min}}"{% endif %}
+    {% if max %}max="{{max}}"{% endif %}
+    {% if step %}step="{{step}}"{% endif %}
+    {% if minlength %}minlength="{{minlength}}"{% endif %}
+    {% if maxlength %}maxlength="{{maxlength}}"{% endif %}>
+{% if type == 'password' and toggle %}
+<button data-js-password="{{id}}">show/hide</button>
+{% endif %}

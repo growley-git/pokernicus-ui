@@ -1,0 +1,14 @@
+<{{tag}}
+    {% if name %}name="{{name}}"{% endif %}
+    {% if type %}type="{{type}}"{% endif %}
+    {% if href %}href="{{href}}"{% endif %}
+    {% if target %}target="{{target}}"{% endif %}
+    class="btn{% if modifier %} btn--{{modifier}}{% endif %}">
+    {% if iconLeft %}
+    <i class="icon-right" aria-hidden="true"></i>
+    {% endif %}
+    <span>{{text}}</span>
+    {% if iconRight %}
+    <i class="icon-right" aria-hidden="true"></i>
+    {% endif %}
+</{{tag}}>

@@ -1,0 +1,59 @@
+<table
+    class="table{% if modifier %} table--{{modifier}}{% endif %}">
+    <caption class="table__caption">Table Caption</caption>
+    <thead class="table__head">
+        <tr class="table__row">
+            <th class="table__heading">Heading One</th>
+            <th class="table__heading">Heading Two</th>
+            <th class="table__heading">Heading Three</th>
+            <th class="table__heading">Heading Four</th>
+            <th class="table__heading">Heading Five</th>
+        </tr>
+    </thead>
+    <tbody class="table__body">
+        <tr class="table__row">
+            <td class="table__cell">Cell One</td>
+            <td class="table__cell">Cell Two</td>
+            <td class="table__cell">Cell Three</td>
+            <td class="table__cell">Cell Four</td>
+            <td class="table__cell">Cell Five</td>
+        </tr>
+        <tr class="table__row">
+            <td class="table__cell">Cell One</td>
+            <td class="table__cell">Cell Two</td>
+            <td class="table__cell">Cell Three</td>
+            <td class="table__cell">Cell Four</td>
+            <td class="table__cell">Cell Five</td>
+        </tr>
+        <tr class="table__row">
+            <td class="table__cell">Cell One</td>
+            <td class="table__cell">Cell Two</td>
+            <td class="table__cell">Cell Three</td>
+            <td class="table__cell">Cell Four</td>
+            <td class="table__cell">Cell Five</td>
+        </tr>
+        <tr class="table__row">
+            <td class="table__cell">Cell One</td>
+            <td class="table__cell">Cell Two</td>
+            <td class="table__cell">Cell Three</td>
+            <td class="table__cell">Cell Four</td>
+            <td class="table__cell">Cell Five</td>
+        </tr>
+        <tr class="table__row">
+            <td class="table__cell">Cell One</td>
+            <td class="table__cell">Cell Two</td>
+            <td class="table__cell">Cell Three</td>
+            <td class="table__cell">Cell Four</td>
+            <td class="table__cell">Cell Five</td>
+        </tr>
+    </tbody>
+    <tfoot class="table__footer">
+        <tr class="table__row">
+            <td class="table__cell">Footer One</td>
+            <td class="table__cell">Footer Two</td>
+            <td class="table__cell">Footer Three</td>
+            <td class="table__cell">Footer Four</td>
+            <td class="table__cell">Footer Five</td>
+        </tr>
+    </tfoot>
+</table>
