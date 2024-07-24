@@ -11,12 +11,12 @@
         <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
         <link href="//fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+BE+VLG:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link href="//cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" rel="stylesheet">
-        <link media="all" href="/css/styles.css" rel="stylesheet">
+        <link media="all" href="{{'/css/styles.css'|path}}" rel="stylesheet">
     </head>
     <body>
         <main style="padding:1rem;">
             {{ yield | safe }}
         </main>
-        <script src="/js/all.js"></script>
+        <script src="{{'/js/all.js'|path}}"></script>
     </body>
 </html>
