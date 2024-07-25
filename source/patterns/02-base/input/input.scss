@@ -1,0 +1,39 @@
+@use "sass:map";
+
+$input-color: $color-text !default;
+$input-padding: rem(8) rem(12) !default;
+$input-border-color: $color-default !default;
+$input-border-radius: rem(6) !default;
+$input-border-thickness: rem(1) !default;
+
+$input-placeholder-color: material-color('grey', '400') !default;
+$input-placeholder-style: italic !default;
+$input-placeholder-weight: 400 !default;
+
+%input {
+    appearance: none;
+    background-color: $color-white;
+    border: $input-border-thickness solid $input-border-color;
+    border-radius: $input-border-radius;
+    color: $input-color;
+    display: block;
+    font-size: map.get($font, size-base);
+    padding: $input-padding;
+    width: 100%;
+    height: auto;
+
+    &::placeholder {
+        color: $input-placeholder-color;
+        font-style: $input-placeholder-style;
+        font-weight: $input-placeholder-weight;
+    }
+
+    &:hover,
+    &:focus {
+        outline: none;
+    }
+}
+
+.input {
+    @extend %input;
+}

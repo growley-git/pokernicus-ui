@@ -1,12 +1,19 @@
 order: -1
 collated: true
 context:
-  color: primary
+  color: default
   material:
-    name: blue
-    val: 700
+    name: blue-grey
+    val: 200
 
 variants:
+  -
+    name: primary
+    context:
+      color: primary
+      material:
+        name: blue
+        val: 700
   -
     name: secondary
     context:

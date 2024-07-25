@@ -1,6 +1,6 @@
 <div class="sg-colors">
     <div class="sg-group">
-        <p class="c-secondary fs-sm">{{color | upper}}</p>
+        <p class="c-default fs-sm">{{color | upper}}</p>
         <hr/>
     </div>
     <div class="sg-color">

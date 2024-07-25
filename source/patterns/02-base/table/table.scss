@@ -1,12 +1,23 @@
+@use "sass:map";
+
+$table-cell-padding: rem(2px) rem(4px) !default;
+$table-border-color: material-color('grey', '500') !default;
+$table-border-thickness: rem(1) !default;
+$table-stripped-row-odd-bg: material-color('grey', '300') !default;
+$table-stripped-row-even-bg: material-color('grey', '400') !default;
+$table-hoverable-row-bg: material-color('grey', '100') !default;
+
 .table {
     $this: &;
 
+    font-size: map.get($font, size-base);
     width: 100%;
     max-width: 100%;
     text-align: left;
     border-collapse: collapse;
 
     &__caption {
+        font-size: map.get($font, size-md);
         text-align: left;
     }
     
@@ -18,14 +29,18 @@
     
     &__row {}
     
-    &__heading {}
+    &__heading {
+        padding: $table-cell-padding;
+    }
     
-    &__cell {}
+    &__cell {
+        padding: $table-cell-padding;
+    }
 
     &--bordered {
-        border: rem(1) solid black;
+        border: $table-border-thickness solid $table-border-color;
         td, th {
-            border: rem(1) solid black;
+            border: $table-border-thickness solid $table-border-color;
         }
     }
 
@@ -33,10 +48,10 @@
         tbody {
             tr {
                 &:nth-of-type(odd) {
-                    background-color: gray;
+                    background-color: $table-stripped-row-odd-bg;
                 }
                 &:nth-of-type(even) {
-                    background-color: lightgray;
+                    background-color: $table-stripped-row-even-bg;
                 }
             }
         }
@@ -47,7 +62,7 @@
             tr {
                 background-color: transparent;
                 &:hover {
-                    background-color: gray;
+                    background-color: $table-hoverable-row-bg;
                 }
             }
         }

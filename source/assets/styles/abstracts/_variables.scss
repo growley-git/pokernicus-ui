@@ -316,6 +316,8 @@ $material-colors: (
 
 $color-white: #FFFFFF;
 $color-black: #000000;
+$color-text: map.get($material-colors, 'grey', '900');
+$color-default: map.get($material-colors, 'blue-grey', '200');
 $color-primary: map.get($material-colors, 'blue', '700');
 $color-secondary: map.get($material-colors, 'deep-purple', '400');
 $color-success: map.get($material-colors, 'green', '400');

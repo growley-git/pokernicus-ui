@@ -7,7 +7,7 @@
     justify-content: flex-start;
     padding: rem(2) rem(8);
     border-radius: rem(8);
-    border: 2px solid gray;
+    border: rem(2) solid $color-default;
 
     &__avatar {
         flex: 0 1 auto;
@@ -16,7 +16,12 @@
 
     &__info {
         display: flex;
-        flex: 1 1 100%;
+        flex: 0 0 auto;
         flex-direction: column;
+    }
+
+    &__username,
+    &__chips {
+        white-space: nowrap;
     }
 }

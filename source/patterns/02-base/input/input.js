@@ -9,9 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 switch (type) {
                     case 'password':
                         $input.setAttribute('type', 'text')
+                        el.innerHTML = $input.getAttribute('data-hide-text')
                         break
                     default:
                         $input.setAttribute('type', 'password')
+                        el.innerHTML = $input.getAttribute('data-show-text')
                         break
                 }
             })

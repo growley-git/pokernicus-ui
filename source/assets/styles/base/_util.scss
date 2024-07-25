@@ -101,6 +101,10 @@ $util-ticks: 64 !default;
     }
 }
 
+.c-default {
+    color: $color-default;
+}
+
 .c-primary {
     color: $color-primary;
 }
@@ -123,6 +127,10 @@ $util-ticks: 64 !default;
 
 .c-info {
     color: $color-info;
+}
+
+.bg-default {
+    background-color: $color-default;
 }
 
 .bg-primary {

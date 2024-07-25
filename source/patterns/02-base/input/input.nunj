@@ -11,7 +11,9 @@
     {% if max %}max="{{max}}"{% endif %}
     {% if step %}step="{{step}}"{% endif %}
     {% if minlength %}minlength="{{minlength}}"{% endif %}
-    {% if maxlength %}maxlength="{{maxlength}}"{% endif %}>
-{% if type == 'password' and toggle %}
-<button data-js-password="{{id}}">show/hide</button>
-{% endif %}
+    {% if maxlength %}maxlength="{{maxlength}}"{% endif %}
+    {% for var, val in data %}data-{{var}}="{{val}}"{% endfor %}
+    >
+{# {% if type == 'password' and toggle %}
+<button data-js-password="{{id}}">{{ data['show-text'] }}</button>
+{% endif %} #}

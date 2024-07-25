@@ -27,5 +27,8 @@ variants:
         name: password
         context:
             type: password
-            value: expialidocious  
+            value: expialidocious
             toggle: true
+            data:
+                show-text: Show
+                hide-text: Hide
