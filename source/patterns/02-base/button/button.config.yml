@@ -34,3 +34,19 @@ variants:
         context:
             text: Non ea enim
             modifier: info
+    -
+        name: icon
+        context:
+            text: null
+            icon: true
+            modifier: icon btn--primary
+    -
+        name: icon-left
+        context:
+            iconLeft: true
+            modifier: primary
+    -
+        name: icon-right
+        context:
+            iconRight: true
+            modifier: primary

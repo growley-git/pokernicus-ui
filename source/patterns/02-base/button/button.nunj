@@ -5,10 +5,15 @@
     {% if target %}target="{{target}}"{% endif %}
     class="btn{% if modifier %} btn--{{modifier}}{% endif %}">
     {% if iconLeft %}
-    <i class="icon-right" aria-hidden="true"></i>
+    {% render '@icon' %}
     {% endif %}
+    {% if text %}
     <span>{{text}}</span>
+    {% endif %}
+    {% if icon %}
+    {% render '@icon' %}
+    {% endif %}
     {% if iconRight %}
-    <i class="icon-right" aria-hidden="true"></i>
+    {% render '@icon' %}
     {% endif %}
 </{{tag}}>

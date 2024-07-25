@@ -52,3 +52,48 @@ ul {
         padding: 0;
     }
 }
+
+
+/*------------------------------------*\
+  # ANCHOR FONT SIZE
+\*------------------------------------*/
+.fs {
+    &-sm {
+        font-size: map.get($font, size-sm);
+    }
+    
+    &-base {
+        font-size: map.get($font, size-base);
+    }
+    
+    &-md {
+        font-size: map.get($font, size-md);
+    }
+    
+    &-lg {
+        font-size: map.get($font, size-lg);
+    }
+    
+    &-xl {
+        font-size: map.get($font, size-xl);
+    }
+    
+    &-xxl {
+        font-size: map.get($font, size-xxl);
+    }
+
+    &-xxxl {
+        font-size: map.get($font, size-xxxl);
+    }
+}
+
+/*------------------------------------*\
+  # ANCHOR FONT WEIGHT
+\*------------------------------------*/
+.fw {
+    @for $i from 1 through 9 {
+        &-#{($i * 100)} {
+            font-weight: ($i * 100);
+        }
+    }
+}

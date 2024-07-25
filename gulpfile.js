@@ -1,6 +1,7 @@
 'use strict'
 
 const pkg = require('./package.json')
+const data = require('./global.json')
 const path = require('path')
 const fractal = require('@frctl/fractal').create()
 const { Table } = require('console-table-printer')
@@ -14,49 +15,6 @@ const clean = require('gulp-clean')
 const webpack = require('webpack-stream')
 const sourcemaps = require('gulp-sourcemaps')
 const mandelbrot = require('@frctl/mandelbrot')
-const handlebars = require('@frctl/handlebars')({
-    helpers: {
-        for: (context, options) => {
-            let ret = ''
-            for (let index = 0; index < context; index++) {
-                ret = ret + options.fn(context[index])
-            }
-            return ret
-        },
-        eval: (a, operator, b, options) => {
-            switch (operator) {
-                case '==':
-                    return (a == b) ? options.fn(this) : options.inverse(this)
-                case '===':
-                    return (a === b) ? options.fn(this) : options.inverse(this)
-                case '!=':
-                    return (a != b) ? options.fn(this) : options.inverse(this)
-                case '!==':
-                    return (a !== b) ? options.fn(this) : options.inverse(this)
-                case '<':
-                    return (a < b) ? options.fn(this) : options.inverse(this)
-                case '<=':
-                    return (a <= b) ? options.fn(this) : options.inverse(this)
-                case '>':
-                    return (a > b) ? options.fn(this) : options.inverse(this)
-                case '>=':
-                    return (a >= b) ? options.fn(this) : options.inverse(this)
-                case '&&':
-                    return (a && b) ? options.fn(this) : options.inverse(this)
-                case '||':
-                    return (a || b) ? options.fn(this) : options.inverse(this)
-                default:
-                    return options.inverse(this)
-            }
-        },
-        uppercase: (str) => {
-            return str.toUpperCase()
-        },
-        kebabcase: (str) => {
-            return str.replaceAll(' ', '-').toLowerCase()
-        }
-    }
-})
 
 fractal.set('project.title', 'Poker App UI')
 fractal.set('project.author', pkg.author || '')
@@ -110,65 +68,7 @@ fractal.components.set('statuses', {
         color: "green"
     }
 })
-fractal.components.set('default.context', {
-    'siteName': 'FooCorp',
-    'players': [
-        // {
-        //     firstName: '',
-        //     lastName: '',
-        //     email: '',
-        //     dob: '',
-        //     username: '',
-        //     password: '',
-        //     chips: 0
-        // },
-        {
-            firstName: 'Sheldon',
-            lastName: 'Allen',
-            email: '',
-            dob: '9/4/1974',
-            username: 'shellen',
-            password: 'massachusetts',
-            chips: 14823
-        },
-        {
-            firstName: 'John',
-            lastName: 'Jackson',
-            email: '',
-            dob: '2/14/1986',
-            username: 'johnnyb',
-            password: 'zooyork',
-            chips: 343852
-        },
-        {
-            firstName: 'Steve',
-            lastName: 'Dyer',
-            email: '',
-            dob: '11/28/1977',
-            username: 'dyermaker',
-            password: 'myverona',
-            chips: 2732390
-        },
-        {
-            firstName: 'Yoko',
-            lastName: 'Terrill',
-            email: '',
-            dob: '11/1/1956',
-            username: 'rllingstones',
-            password: 'cutpiece',
-            chips: 1238
-        },
-        {
-            firstName: 'Donald',
-            lastName: 'Flanagan',
-            email: '',
-            dob: '12/19/1962',
-            username: 'flanneldon',
-            password: 'checkeredboii',
-            chips: 13088232
-        },
-    ]
-});
+fractal.components.set('default.context', data)
 fractal.components.set('default.status', 'prototype')
 fractal.components.set('ext', '.nunj')
 fractal.components.engine('@frctl/nunjucks')

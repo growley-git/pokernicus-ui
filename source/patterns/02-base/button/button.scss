@@ -1,12 +1,25 @@
+@use "sass:map";
+
+$btn-padding: rem(8) rem(12);
+$btn-border-radius: rem(4);
+$btn-border-thickness: rem(1);
+
 %btn {
     appearance: none;
     background-color: transparent;
-    border: 1px solid transparent;
+    border: $btn-border-thickness solid transparent;
+    border-radius: $btn-border-radius;
+    color: $color-primary;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    font-size: map.get($font, size-base);
+    line-height: 1;
+    overflow: hidden;
     text-decoration: none;
+    gap: rem(8);
 }
+
 
 .btn {
     $this: &;
@@ -24,12 +37,63 @@
     &--warning,
     &--danger,
     &--info {
-        background-color: lightpink;
-        padding: rem(8) rem(12);
+        padding: $btn-padding;
+        position: relative;
+        text-decoration: none;
+        z-index: 0;
+
+        &:before {
+            background-color: rgba($color-white, 0.1);
+            content: '';
+            width: 0%;
+            height: 100%;
+            position: absolute;
+            transition: width 200ms linear;
+            z-index: 0;
+        }
 
         &:hover,
         &:focus {
-            background-color: salmon;
+            text-decoration: none;
+            &:before {
+                width: 100%;
+            }
         }
+    }
+
+    &--primary {
+        background-color: $color-primary;
+        color: contrast-color($color-primary);
+    }
+
+    &--secondary {
+        background-color: $color-secondary;
+        color: contrast-color($color-secondary);
+    }
+
+    &--success {
+        background-color: $color-success;
+        color: contrast-color($color-success);
+    }
+
+    &--warning {
+        background-color: $color-warning;
+        color: contrast-color($color-warning);
+    }
+
+    &--danger {
+        background-color: $color-danger;
+        color: contrast-color($color-danger);
+    }
+
+    &--info {
+        background-color: $color-info;
+        color: contrast-color($color-info);
+    }
+
+    &--icon {
+        border-radius: 50%;
+        min-width: rem(48);
+        min-height: rem(48);
     }
 }

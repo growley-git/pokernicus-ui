@@ -1,4 +1,4 @@
 <i
-    class="{{family}} {% if prefix %}{{prefix}}-{% endif %}{{icon}}{% if modifier %} {{modifier}}{% endif %}"
+    class="icon {{family}} {% if prefix %}{{prefix}}-{% endif %}{{icon}}{% if modifier %} {{modifier}}{% endif %}"
     aria-hidden="">
 </i>

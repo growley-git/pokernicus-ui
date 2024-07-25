@@ -1,10 +1,16 @@
 @import
     "abstracts/variables",
     "abstracts/functions",
-    "abstracts/mixins",
+    "abstracts/mixins";
+
+@import
+    "vendor/materialdesignicons";
+
+@import
     "base/body",
     "base/type",
     "base/form",
     "base/util";
 
-@import "../../patterns/**/*.scss";
+@import 
+    "../../patterns/**/*.scss";

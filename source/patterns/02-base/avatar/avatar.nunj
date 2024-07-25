@@ -1,0 +1,1 @@
+<img class="avatar" src="https://api.dicebear.com/9.x/{{style}}/svg?seed={{seed}}" alt="Avatar {{seed}}">

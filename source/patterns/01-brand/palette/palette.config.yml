@@ -1,0 +1,332 @@
+order: 0
+collated: true
+context:
+  color: grey
+  shade:
+    - 100
+    - 200
+    - 300
+    - 400
+    - 500
+    - 600
+    - 700
+    - 800
+    - 900
+
+variants:
+  -
+    name: red
+    context:
+      color: red
+      shade:
+        - 100
+        - 200
+        - 300
+        - 400
+        - 500
+        - 600
+        - 700
+        - 800
+        - 900
+        - a100
+        - a200
+        - a400
+        - a700
+  -
+    name: pink
+    context:
+      color: pink
+      shade:
+        - 100
+        - 200
+        - 300
+        - 400
+        - 500
+        - 600
+        - 700
+        - 800
+        - 900
+        - a100
+        - a200
+        - a400
+        - a700
+  -
+    name: purple
+    context:
+      color: purple
+      shade:
+        - 100
+        - 200
+        - 300
+        - 400
+        - 500
+        - 600
+        - 700
+        - 800
+        - 900
+        - a100
+        - a200
+        - a400
+        - a700
+  -
+    name: deep-purple
+    context:
+      color: deep-purple
+      shade:
+        - 100
+        - 200
+        - 300
+        - 400
+        - 500
+        - 600
+        - 700
+        - 800
+        - 900
+        - a100
+        - a200
+        - a400
+        - a700
+  -
+    name: indigo
+    context:
+      color: indigo
+      shade:
+        - 100
+        - 200
+        - 300
+        - 400
+        - 500
+        - 600
+        - 700
+        - 800
+        - 900
+        - a100
+        - a200
+        - a400
+        - a700
+  -
+    name: blue
+    context:
+      color: blue
+      shade:
+        - 100
+        - 200
+        - 300
+        - 400
+        - 500
+        - 600
+        - 700
+        - 800
+        - 900
+        - a100
+        - a200
+        - a400
+        - a700
+  -
+    name: light-blue
+    context:
+      color: light-blue
+      shade:
+        - 100
+        - 200
+        - 300
+        - 400
+        - 500
+        - 600
+        - 700
+        - 800
+        - 900
+        - a100
+        - a200
+        - a400
+        - a700
+  -
+    name: cyan
+    context:
+      color: cyan
+      shade:
+        - 100
+        - 200
+        - 300
+        - 400
+        - 500
+        - 600
+        - 700
+        - 800
+        - 900
+        - a100
+        - a200
+        - a400
+        - a700
+  -
+    name: teal
+    context:
+      color: teal
+      shade:
+        - 100
+        - 200
+        - 300
+        - 400
+        - 500
+        - 600
+        - 700
+        - 800
+        - 900
+        - a100
+        - a200
+        - a400
+        - a700
+  -
+    name: green
+    context:
+      color: green
+      shade:
+        - 100
+        - 200
+        - 300
+        - 400
+        - 500
+        - 600
+        - 700
+        - 800
+        - 900
+        - a100
+        - a200
+        - a400
+        - a700
+  -
+    name: light-green
+    context:
+      color: light-green
+      shade:
+        - 100
+        - 200
+        - 300
+        - 400
+        - 500
+        - 600
+        - 700
+        - 800
+        - 900
+        - a100
+        - a200
+        - a400
+        - a700
+  -
+    name: lime
+    context:
+      color: lime
+      shade:
+        - 100
+        - 200
+        - 300
+        - 400
+        - 500
+        - 600
+        - 700
+        - 800
+        - 900
+        - a100
+        - a200
+        - a400
+        - a700
+  -
+    name: yellow
+    context:
+      color: yellow
+      shade:
+        - 100
+        - 200
+        - 300
+        - 400
+        - 500
+        - 600
+        - 700
+        - 800
+        - 900
+        - a100
+        - a200
+        - a400
+        - a700
+  -
+    name: amber
+    context:
+      color: amber
+      shade:
+        - 100
+        - 200
+        - 300
+        - 400
+        - 500
+        - 600
+        - 700
+        - 800
+        - 900
+        - a100
+        - a200
+        - a400
+        - a700
+  -
+    name: orange
+    context:
+      color: orange
+      shade:
+        - 100
+        - 200
+        - 300
+        - 400
+        - 500
+        - 600
+        - 700
+        - 800
+        - 900
+        - a100
+        - a200
+        - a400
+        - a700
+  -
+    name: deep-orange
+    context:
+      color: deep-orange
+      shade:
+        - 100
+        - 200
+        - 300
+        - 400
+        - 500
+        - 600
+        - 700
+        - 800
+        - 900
+        - a100
+        - a200
+        - a400
+        - a700
+  -
+    name: brown
+    context:
+      color: brown
+      shade:
+        - 100
+        - 200
+        - 300
+        - 400
+        - 500
+        - 600
+        - 700
+        - 800
+        - 900
+  -
+    name: blue-grey
+    context:
+      color: blue-grey
+      shade:
+        - 100
+        - 200
+        - 300
+        - 400
+        - 500
+        - 600
+        - 700
+        - 800
+        - 900

@@ -1,9 +1,58 @@
+@use "sass:map";
 @use "sass:math";
 
 @function em($value) {
-    @return math.div($value, 16) + em
+    @return math.div(strip-unit($value), map.get($font, size)) + em;
 }
 
 @function rem($value) {
-    @return math.div($value, 16) + rem
+    @return math.div(strip-unit($value), map.get($font, size)) + rem;
+}
+
+@function strip-unit($value) {
+    @return math.div($value, ($value * 0 + 1));
+}
+
+// LINEAR to LOGARITHMIC and vicev-ersa
+@function re-gamma($n) {
+    @if $n <= 0.0031308 {
+        @return $n * 12.92;
+    }
+    @else {
+        @return 1.055 * pow($n, math.div(1, 2.4)) - 0.055;
+    }
+}
+
+@function de-gamma($n) {
+    @if $n <=0.04045 {
+        @return math.div($n, 12.92);
+    }
+    @else {
+        @return pow(math.div(($n + 0.055), 1.055), 2.4);
+    }
+}
+
+// sRGB BT-709 BRIGHTNESS
+@function brightness($c) {
+    $rlin: de-gamma(math.div(red($c), 255));
+    $glin: de-gamma(math.div(green($c), 255));
+    $blin: de-gamma(math.div(blue($c), 255));
+    @return re-gamma(0.2126 * $rlin + 0.7152 * $glin + 0.0722 * $blin) * 100;
+}
+
+// Compares contrast of a given color to the light/dark arguments and returns whichever is most "contrasty"
+@function contrast-color($color, $dark: #000000, $light: #FFFFFF) {
+    @if $color == null {
+        @return null;
+    }
+    @else {
+        $color-brightness: brightness($color);
+        $light-text-brightness: brightness($light);
+        $dark-text-brightness: brightness($dark);
+        @return if(abs($color-brightness - $light-text-brightness) > abs($color-brightness - $dark-text-brightness), $light, $dark);
+    }
+}
+
+@function material-color($color-name, $color-variant: '500') {
+    @return map.get($material-colors, $color-name, $color-variant);
 }

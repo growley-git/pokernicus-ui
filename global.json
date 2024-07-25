@@ -1,0 +1,50 @@
+{
+    "siteName": "FooCorp",
+    "players": [
+        {
+            "firstName": "Sheldon",
+            "lastName": "Allen",
+            "email": "",
+            "dob": "9/4/1974",
+            "username": "shellen",
+            "password": "massachusetts",
+            "chips": 14823
+        },
+        {
+            "firstName": "John",
+            "lastName": "Jackson",
+            "email": "",
+            "dob": "2/14/1986",
+            "username": "johnnyb",
+            "password": "zooyork",
+            "chips": 343852
+        },
+        {
+            "firstName": "Steve",
+            "lastName": "Dyer",
+            "email": "",
+            "dob": "11/28/1977",
+            "username": "dyermaker",
+            "password": "myverona",
+            "chips": 2732390
+        },
+        {
+            "firstName": "Yoko",
+            "lastName": "Terrill",
+            "email": "",
+            "dob": "11/1/1956",
+            "username": "rllingstones",
+            "password": "cutpiece",
+            "chips": 1238
+        },
+        {
+            "firstName": "Donald",
+            "lastName": "Flanagan",
+            "email": "",
+            "dob": "12/19/1962",
+            "username": "flanneldon",
+            "password": "checkeredboii",
+            "chips": 13088232
+        }
+    ]
+}

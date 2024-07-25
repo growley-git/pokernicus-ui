@@ -87,3 +87,64 @@ $util-ticks: 64 !default;
         }
     }
 }
+
+@each $color-name, $color-variants in $material-colors {
+    @each $color-variant, $hex-value in $color-variants {
+        %color-#{$color-name}-#{$color-variant},
+        .color-#{$color-name}-#{$color-variant} {
+            color: #{$hex-value};
+        }
+        %bg-color-#{$color-name}-#{$color-variant},
+        .bg-color-#{$color-name}-#{$color-variant} {
+            background-color: #{$hex-value};
+        }
+    }
+}
+
+.c-primary {
+    color: $color-primary;
+}
+
+.c-secondary {
+    color: $color-secondary;
+}
+
+.c-success {
+    color: $color-success;
+}
+
+.c-warning {
+    color: $color-warning;
+}
+
+.c-danger {
+    color: $color-danger;
+}
+
+.c-info {
+    color: $color-info;
+}
+
+.bg-primary {
+    background-color: $color-primary;
+}
+
+.bg-secondary {
+    background-color: $color-secondary;
+}
+
+.bg-success {
+    background-color: $color-success;
+}
+
+.bg-warning {
+    background-color: $color-warning;
+}
+
+.bg-danger {
+    background-color: $color-danger;
+}
+
+.bg-info {
+    background-color: $color-info;
+}

@@ -1,0 +1,13 @@
+<div class="sg-colors">
+    <div class="sg-group">
+        <p class="c-secondary fs-sm">{{color | upper}}</p>
+        <hr/>
+    </div>
+    <div class="sg-color">
+        <div class="sg-color__chip bg-{{color}}"></div>
+        <div class="sg-color__info">
+            <span><strong>SCSS:</strong> material-color('{{material.name}}', '{{material.val}}')</span>
+            <span><strong>SCSS:</strong> $color-{{color}}</span>
+        </div>
+    </div>
+</div>
