@@ -1,4 +1,0 @@
-<form>
-    {% render '@form', fields %}
-    {% render '@button--primary', submit %}
-</form>

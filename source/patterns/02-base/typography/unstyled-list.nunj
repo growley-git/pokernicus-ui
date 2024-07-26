@@ -1,5 +1,0 @@
-<ul class="list--unstyled">
-    {% for item in items %}
-    <li>{{item.text}}</li>
-    {% endfor %}
-</ul>

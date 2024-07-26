@@ -1,0 +1,5 @@
+<{{tag}}{% if modifier %} class="{{modifier}}"{% endif %}>
+{% for item in items %}
+    <li{% if modifier %} class="{{itemModifier}}"{% endif %}>{{item}}</li>
+{% endfor %}
+</{{tag}}>

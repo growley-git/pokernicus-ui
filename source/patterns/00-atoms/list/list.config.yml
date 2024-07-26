@@ -1,0 +1,24 @@
+context:
+  tag: ul
+  items:
+    - list item one
+    - list item two
+    - list item three
+    - list item four
+    - list item five
+
+variants:
+  -
+    name: ol
+    label: Ordered
+    context:
+      tag: ol
+  -
+    name: unstyled
+    context:
+      modifier: list-unstyled
+  -
+    name: inline
+    context:
+      modifier: list-inline
+      itemModifier: list-inline-item

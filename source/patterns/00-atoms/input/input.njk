@@ -1,0 +1,16 @@
+<input
+    {% if id %}id="{{id}}"{% endif %}
+    {% if type %}type="{{type}}"{% endif %}
+    {% if name %}name="{{name}}"{% endif %}
+    class="form-control{% if class %} {{class}}{% endif %}"
+    {% if min %}min="{{min}}"{% endif %}
+    {% if max %}max="{{max}}"{% endif %}
+    {% if step %}step="{{step}}"{% endif %}
+    {% if minlength %}minlength="{{minlength}}"{% endif %}
+    {% if maxlength %}maxlength="{{maxlength}}"{% endif %}
+    {% if pattern %}pattern="{{pattern}}"{% endif %}
+    {% if placeholder %}placeholder="{{placeholder}}"{% endif %}
+    {% if autocomplete %}autocomplete="{{autocomplete}}"{% endif %}
+    {% if value %}value="{{value}}"{% endif %}
+    {% if required %}required{% endif %}
+    {% if readonly %}readonly{% endif %}>

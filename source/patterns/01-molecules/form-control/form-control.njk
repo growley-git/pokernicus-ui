@@ -1,0 +1,13 @@
+<div class="mb-3{% if inline %} row align-items-center{% endif %}">
+    {% if inline %}
+    <div class="col col-auto">
+        {% render '@label' %}
+    </div>
+    <div class="col">
+        {% render '@input' %}
+    </div>
+    {% else %}
+    {% render '@label' %}
+    {% render '@input' %}
+    {% endif %}
+</div>

@@ -1,5 +1,0 @@
-<div class="table-assignment">
-    {% for player in players %}
-        {% render '@user-badge', player, true %}
-    {% endfor %}
-</div>

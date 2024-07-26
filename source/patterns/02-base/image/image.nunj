@@ -1,8 +1,0 @@
-{% if src %}
-<figure class="image{% if modifier %} image--{{modifier}}{% endif %}{% if class %} {{class}}{% endif %}">
-    <img src="{{src}}" alt="{{alt}}">
-    {% if cap %}
-        <figcaption>{{cap | safe}}</figcaption>
-    {% endif %}
-</figure>
-{% endif %}

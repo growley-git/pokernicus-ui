@@ -1,4 +1,0 @@
-<blockquote {% if cite.url %}cite="{{cite.url}}"{% endif %}>Dolor qui et officia Lorem dolore commodo in est. Consectetur amet do tempor deserunt ex officia laboris dolore. Et est nisi culpa laborum veniam dolor amet consequat cupidatat. Ut adipisicing qui enim adipisicing cupidatat ipsum duis commodo dolore elit deserunt sit. Consequat eiusmod id ut consectetur cupidatat elit mollit ut magna. Amet qui ad labore qui aute qui excepteur ullamco commodo. Proident nulla minim eiusmod minim.</blockquote>
-{% if cite %}
-<cite>{{cite.author}}{% if cite.url %} &mdash; ({{cite.url | safe}}){% endif %}</cite>
-{% endif %}

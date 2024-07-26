@@ -1,7 +1,0 @@
-<div class="event-list">
-    {% for event in events %}
-    <div class="event-list__item">
-        {% render '@event-card', event, true %}
-    </div>
-    {% endfor %}
-</div>

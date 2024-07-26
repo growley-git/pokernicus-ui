@@ -70,7 +70,7 @@ fractal.components.set('statuses', {
 })
 fractal.components.set('default.context', data)
 fractal.components.set('default.status', 'prototype')
-fractal.components.set('ext', '.nunj')
+fractal.components.set('ext', '.njk')
 fractal.components.engine('@frctl/nunjucks')
 
 const cleanPublic = function () {

@@ -1,0 +1,30 @@
+context:
+  items:
+    -
+      href: '#'
+      text: Proident Fugiat
+      active: true
+    -
+      href: '#'
+      text: Proident Veniam
+    -
+      href: '#'
+      text: Nulla Dolor
+    -
+      href: '#'
+      text: Pariatur amet Laborum
+      disabled: true
+
+variants:
+  -
+    name: tabs
+    context:
+      tabs: true
+  -
+    name: pills
+    context:
+      pills: true
+  -
+    name: underline
+    context:
+      underline: true

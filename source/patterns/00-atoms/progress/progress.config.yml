@@ -1,0 +1,53 @@
+context:
+  min: 0
+  max: 100
+  now: 50
+
+variants:
+  -
+    name: primary
+    context:
+      modifier: primary
+  -
+    name: secondary
+    context:
+      modifier: secondary
+  -
+    name: success
+    context:
+      modifier: success
+  -
+    name: danger
+    context:
+      modifier: danger
+  -
+    name: warning
+    context:
+      modifier: warning
+  -
+    name: info
+    context:
+      modifier: info
+  -
+    name: light
+    context:
+      modifier: light
+  -
+    name: dark
+    context:
+      modifier: dark
+  -
+    name: striped
+    context:
+      striped: true
+      modifier: primary
+  -
+    name: animated
+    context:
+      striped: true
+      animated: true
+      modifier: secondary
+  -
+    name: labeled
+    context:
+      label: true

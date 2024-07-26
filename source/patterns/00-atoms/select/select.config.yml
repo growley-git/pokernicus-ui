@@ -1,0 +1,5 @@
+context:
+  options:
+    a: foo
+    b: bar
+    c: baz

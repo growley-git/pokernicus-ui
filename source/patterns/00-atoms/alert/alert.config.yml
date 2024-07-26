@@ -1,0 +1,42 @@
+context:
+  text: Ipsum incididunt aliqua et consectetur do fugiat officia ullamco irure aute sint. Ex consequat in quis ut elit duis ea. Velit non Lorem incididunt exercitation laborum amet nulla quis laborum do Lorem. Elit occaecat proident non eu elit dolor eiusmod do officia.
+  modifier: light
+
+variants:
+  -
+    name: primary
+    context:
+      modifier: primary
+  -
+    name: secondary
+    context:
+      modifier: secondary
+  -
+    name: success
+    context:
+      modifier: success
+  -
+    name: danger
+    context:
+      modifier: danger
+  -
+    name: warning
+    context:
+      modifier: warning
+  -
+    name: info
+    context:
+      modifier: info
+  -
+    name: light
+    context:
+      modifier: light
+  -
+    name: dark
+    context:
+      modifier: dark
+  -
+    name: dismissible
+    context:
+      dismissible: true
+      modifier: primary

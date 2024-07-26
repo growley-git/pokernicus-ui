@@ -1,0 +1,32 @@
+collated: true
+context:
+  tag: p
+  text: Display One
+  display: 1
+
+variants:
+  -
+    name: '2'
+    context:
+      text: Display Two
+      display: 2
+  -
+    name: '3'
+    context:
+      text: Display Three
+      display: 3
+  -
+    name: '4'
+    context:
+      text: Display Four
+      display: 4
+  -
+    name: '5'
+    context:
+      text: Display Five
+      display: 5
+  -
+    name: '6'
+    context:
+      text: Display Six
+      display: 6
