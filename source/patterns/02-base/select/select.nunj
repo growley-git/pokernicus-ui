@@ -1,0 +1,20 @@
+<select
+    id="{{id}}"
+    class="select{% if modifier %} select--{{modifier}}{% endif %}{% if class %} {{class}}{% endif %}"
+    {% if name %}name="{{name}}"{% endif %}
+    {% if size %}size="{{size}}"{% endif %}
+    {% if multiple %}multiple="{{multiple}}"{% endif %}
+    {% if readonly %}readonly="{{readonly}}"{% endif %}
+    {% if required %}required="{{required}}"{% endif %}
+    {% for var, val in data %}data-{{var}}="{{val}}"{% endfor %}>
+    {% for option, label in options %}
+        <option value="{{option}}">{{label}}</option>
+    {% endfor %}
+    {% for group in optgroups %}
+        <optgroup label="{{group.name}}">
+            {% for option, label in group.options %}
+                <option value="{{option}}">{{label}}</option>
+            {% endfor %}
+        </optgroup>
+    {% endfor %}
+</select>

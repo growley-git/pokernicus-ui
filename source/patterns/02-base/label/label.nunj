@@ -1,0 +1,6 @@
+<label
+    {% if id %}id="{{id}}"{% endif %}
+    {% if forId %}for="{{forId}}"{% endif %}
+    class="label{% if modifier %} label--{{modifier}}{% endif %}{% if required %} label--required{% endif %}{% if class %} {{class}}{% endif %}">
+    {{text}}{% if required %}<sup>*</sup>{% endif %}
+</label>

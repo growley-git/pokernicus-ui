@@ -1,0 +1,22 @@
+context:
+  # fields:
+  #   -
+  #     label:
+  #       text: Username
+  #       forId: username
+  #     input:
+  #       id: username
+  #       type: text
+  #   -
+  #     label:
+  #       text: E-mail Address
+  #       forId: email
+  #     input:
+  #       id: email
+  #       type: email
+
+  submit:
+    tag: button
+    text: Sign Up
+    modifier: primary
+    iconRight: true

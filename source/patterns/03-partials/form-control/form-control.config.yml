@@ -1,5 +1,11 @@
 context:
-    test: null
+    label:
+        text: Irure aliqua magna
+        class: form-control__label
+        forId: input
+    input:
+        id: input
+        class: form-control__input
 variants:
     -
         name: horizontal

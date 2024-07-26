@@ -1,0 +1,31 @@
+context:
+  fields:
+    -
+      label:
+        text: Consectetur occaecat
+        forId: text
+      input:
+        id: text
+        type: text
+    -
+      label:
+        text: Nisi deserunt
+        forId: select
+      input:
+        id: select
+        type: select
+    -
+      label:
+        text: Mollit ut excepteur
+        forId: textarea
+      input:
+        id: textarea
+        type: textarea
+    -
+      label:
+        text: Lorem qui culpa ea reprehenderit proident?
+        forId: checkbox
+      input:
+        id: checkbox
+        type: checkbox
+      modifier: horizontal

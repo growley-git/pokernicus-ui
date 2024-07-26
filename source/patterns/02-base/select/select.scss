@@ -1,0 +1,6 @@
+.select {
+    $this: &;
+
+    @extend %input;
+    appearance: auto;
+}

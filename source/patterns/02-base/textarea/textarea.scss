@@ -1,0 +1,8 @@
+.textarea {
+    $this: &;
+
+    @extend %input;
+
+    min-height: rem(75);
+    resize: vertical;
+}

@@ -1,0 +1,3 @@
+{% for field in fields %}
+{% render '@form-control', field, true %}
+{% endfor %}

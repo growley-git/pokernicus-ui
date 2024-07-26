@@ -1,0 +1,4 @@
+context:
+  options:
+    one: Option One
+    two: Option Two

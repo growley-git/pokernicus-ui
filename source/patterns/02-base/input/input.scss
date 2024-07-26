@@ -35,5 +35,67 @@ $input-placeholder-weight: 400 !default;
 }
 
 .input {
+    $this: &;
+
     @extend %input;
+
+    &--radio {
+        margin: 0;
+        padding: 0;
+        opacity: 0;
+        width: rem(20);
+        height: rem(20);
+
+        &:checked ~ #{$this}__radio {
+            background-color: material-color('blue', '400');
+
+            &:before {
+                content: '\F09DE';
+                font-family: map.get($font, family-icon);
+            }
+        }
+    }
+
+    &__radio {
+        background-color: material-color('grey', '300');
+        border-radius: 50%;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: rem(20);
+        height: rem(20);
+
+        &:hover,
+        &:focus {
+            cursor: pointer;
+        }
+    }
+
+    &--checkbox {
+        margin: 0;
+        padding: 0;
+        opacity: 0;
+        width: rem(20);
+        height: rem(20);
+
+        &:checked ~ #{$this}__checkbox {
+            background-color: material-color('blue', '400');
+
+            &:before {
+                content: '\F0E1E';
+                font-family: map.get($font, family-icon);
+            }
+        }
+    }
+
+    &__checkbox {
+        background-color: material-color('grey', '300');
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: rem(20);
+        height: rem(20);
+    }
 }

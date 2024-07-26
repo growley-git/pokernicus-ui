@@ -32,3 +32,11 @@ variants:
             data:
                 show-text: Show
                 hide-text: Hide
+    -
+        name: radio
+        context:
+            type: radio
+    -
+        name: checkbox
+        context:
+            type: checkbox

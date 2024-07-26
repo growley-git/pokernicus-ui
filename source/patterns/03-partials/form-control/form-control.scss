@@ -5,16 +5,15 @@
     flex-direction: column;
     width: 100%;
 
+    margin-block: rem(8);
+
     &__label {
         margin-bottom: rem(4);
         white-space: nowrap;
     }
 
     &__input {
-        flex: 1 1 100%;
         margin-bottom: rem(4);
-        max-width: 100%;
-        width: 100%;
     }
 
     &--horizontal {

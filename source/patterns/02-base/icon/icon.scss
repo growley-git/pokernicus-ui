@@ -1,5 +1,5 @@
 @use "sass:map";
 
 .icon {
-    font: map.get($font, size-base);
+    font-size: map.get($font, size-base);
 }

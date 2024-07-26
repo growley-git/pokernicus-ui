@@ -16,7 +16,7 @@ const webpack = require('webpack-stream')
 const sourcemaps = require('gulp-sourcemaps')
 const mandelbrot = require('@frctl/mandelbrot')
 
-fractal.set('project.title', 'Poker App UI')
+fractal.set('project.title', 'UI')
 fractal.set('project.author', pkg.author || '')
 fractal.set('project.version', pkg.version)
 

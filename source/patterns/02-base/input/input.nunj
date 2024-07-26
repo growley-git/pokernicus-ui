@@ -1,7 +1,8 @@
 <input
     id="{{id}}"
-    class="input{% if modifier %} input--{{modifier}}{% endif %}{% if class %} {{class}}{% endif %}"
+    class="input input--{{type}} {% if modifier %} input--{{modifier}}{% endif %}{% if class %} {{class}}{% endif %}"
     {% if type %}type="{{type}}"{% endif %}
+    {% if name %}name="{{name}}"{% endif %}
     {% if value %}value="{{value}}"{% endif %}
     {% if readonly %}readonly="{{readonly}}"{% endif %}
     {% if required %}required="{{required}}"{% endif %}
@@ -12,8 +13,10 @@
     {% if step %}step="{{step}}"{% endif %}
     {% if minlength %}minlength="{{minlength}}"{% endif %}
     {% if maxlength %}maxlength="{{maxlength}}"{% endif %}
-    {% for var, val in data %}data-{{var}}="{{val}}"{% endfor %}
-    >
-{# {% if type == 'password' and toggle %}
-<button data-js-password="{{id}}">{{ data['show-text'] }}</button>
-{% endif %} #}
+    {% for var, val in data %}data-{{var}}="{{val}}"{% endfor %}>
+{% if type == 'radio' %}
+<span class="input__radio"></span>
+{% endif %}
+{% if type == 'checkbox' %}
+<span class="input__checkbox"></span>
+{% endif %}
