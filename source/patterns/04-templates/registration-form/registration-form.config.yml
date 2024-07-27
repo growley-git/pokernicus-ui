@@ -1,0 +1,137 @@
+context:
+  fields:
+    -
+        input:
+            id: firstName
+            name: firstName
+            type: text
+            required: true
+            autocomplete: off
+        label:
+            id: firstName
+            label: First Name
+            required: true
+        columns:
+            - sm-12
+            - md-4
+    -
+        input:
+            id: lastName
+            name: lastName
+            type: text
+            required: true
+            autocomplete: off
+        label:
+            id: lastName
+            label: Last Name
+            required: true
+        columns:
+            - sm-12
+            - md-4
+    -
+        input:
+            id: username
+            name: username
+            type: text
+            required: true
+            autocomplete: off
+        label:
+            id: username
+            label: Username
+            required: true
+        columns:
+            - sm-12
+            - md-4
+    -
+        input:
+            id: email
+            name: email
+            type: email
+            required: true
+            autocomplete: off
+        label:
+            id: email
+            label: E-mail Address
+            required: true
+        required: true
+        columns:
+            - sm-12
+            - md-6
+    -
+        input:
+            id: dob
+            name: dob
+            type: date
+            required: true
+            autocomplete: off
+        label:
+            id: dob
+            label: Date of Birth
+            required: true
+        columns:
+            - sm-12
+            - md-6
+    -
+        input:
+            id: password
+            name: password
+            type: password
+            required: true
+            autocomplete: off
+        label:
+            id: password
+            label: Password
+            required: true
+        columns:
+            - sm-12
+            - md-6
+    -
+        input:
+            id: confirm-password
+            name: confirm-password
+            type: password
+            required: true
+            autocomplete: off
+        label:
+            id: confirm-password
+            label: Confirm Password
+            required: true
+        columns:
+            - sm-12
+            - md-6
+    -
+        input:
+            id: accept-tos
+            name: accept-tos
+            type: checkbox
+            required: true
+        label:
+            id: accept-tos
+            label: Accept Terms of Service
+            required: true
+    -
+        input:
+            id: accept-priv
+            name: accept-priv
+            type: checkbox
+            required: true
+        label:
+            id: accept-priv
+            label: Accept Privacy Policy
+            required: true
+    -
+        type: button
+        text: Cancel
+        leftIcon:
+            icon: close
+        modifier: secondary
+        columns:
+            - md-auto
+    -
+        type: button
+        text: Sign Up
+        rightIcon:
+            icon: send
+        modifier: success
+        columns:
+            - md-auto

@@ -1,0 +1,6 @@
+<div class="form-check">
+    <input id="{{input.id}}" type="radio" class="form-check-input">
+    {% if label %}
+    <label for="{{label.id}}" class="form-check-label">{{label.label|safe}}</label>
+    {% endif %}
+</div>

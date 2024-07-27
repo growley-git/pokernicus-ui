@@ -1,0 +1,17 @@
+<form>
+    <div class="row">
+    {% for field in fields %}
+        <div class="col-12{% for col in field.columns %} col-{{col}}{% endfor %}">
+            {% if field.type == 'button' %}
+            {% render '@button', field, true %}
+            {% elif field.input.type == 'checkbox' %}
+            {% render '@checkbox', field, true %}
+            {% elif field.input.type == 'radio' %}
+            {% render '@radio', field, true %}
+            {% else %}
+            {% render '@form-control', field, true %}
+            {% endif %}
+        </div>
+    {% endfor %}
+    </div>
+</form>

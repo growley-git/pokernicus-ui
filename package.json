@@ -27,6 +27,7 @@
         "@frctl/fractal": "^1.5.15",
         "@frctl/nunjucks": "^2.0.15",
         "@mdi/font": "^7.4.47",
+        "bootstrap": "^5.3.3",
         "jquery": "^3.7.1"
     }
 }

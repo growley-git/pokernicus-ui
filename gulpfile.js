@@ -15,6 +15,14 @@ const clean = require('gulp-clean')
 const webpack = require('webpack-stream')
 const sourcemaps = require('gulp-sourcemaps')
 const mandelbrot = require('@frctl/mandelbrot')
+const nunjucks = require('@frctl/nunjucks')({
+    filters: {
+        // shorten: function(str, count) {
+        //     return str.slice(0, count || 5); // bespoke 'shorten' filter to use in view templates
+        // }
+    }
+    // ...other config properties here
+});
 
 fractal.set('project.title', 'UI')
 fractal.set('project.author', pkg.author || '')
@@ -71,7 +79,7 @@ fractal.components.set('statuses', {
 fractal.components.set('default.context', data)
 fractal.components.set('default.status', 'prototype')
 fractal.components.set('ext', '.njk')
-fractal.components.engine('@frctl/nunjucks')
+fractal.components.engine(nunjucks)
 
 const cleanPublic = function () {
     return src('./public', { allowEmpty: true, read: false })
@@ -98,6 +106,7 @@ const stylesBuild = function () {
         .pipe(sourcemaps.init())
         .pipe(sassGlob())
         .pipe(sass({
+            quietDeps: true, // disable warning msg
             outputStyle: 'expanded'
         }).on('error', sass.logError))
         .pipe(sourcemaps.write('.'))

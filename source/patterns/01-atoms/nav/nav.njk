@@ -1,0 +1,23 @@
+{% if breadcrumb %}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        {% for item in items %}
+        <li class="breadcrumb-item{% if loop.last %} active{% endif %}"{% if loop.last %} aria-current="page"{% endif %}>
+            {% if not loop.last %}
+            <a href="#">{{item.text}}</a>
+            {% else %}
+            {{item.text}}
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ol>
+</nav>
+{% else %}
+<ul class="nav{% if pills %} nav-pills{% endif %}{% if tabs %} nav-tabs{% endif %}{% if underline %} nav-underline{% endif %}">
+    {% for item in items %}    
+    <li class="nav-item">
+        <a class="nav-link{% if item.active %} active{% endif %}{% if item.disabled %} disabled{% endif %}" href="{{item.href}}">{{item.text}}</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endif %}

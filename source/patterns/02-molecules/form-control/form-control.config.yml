@@ -1,0 +1,7 @@
+context:
+
+variants:
+  -
+    name: inline
+    context:
+      inline: true

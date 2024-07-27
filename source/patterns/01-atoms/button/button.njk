@@ -1,0 +1,21 @@
+<{{tag}}
+    class="btn{% if modifier %} btn-{{modifier}}{% endif %}{% if class %} {{class}}{% endif %}{% if disabled %} disabled{% endif %}"
+    {% if href %}href="{{href}}"{% endif %}
+    {% if type %}type="{{type}}"{% endif %}
+    {% if role %}role="{{role}}"{% endif %}
+    {% if name %}name="{{name}}"{% endif %}
+    {% if target %}target="{{target}}"{% endif %}
+    {% if disabled %}disabled aria-disabled="true"{% endif %}>
+{% if leftIcon %}
+    {% render '@icon', leftIcon, true %}
+{% endif %}
+{% if icon %}
+    {% render '@icon', icon, true %}
+{% endif %}
+{% if text %}
+    <span class="test">{{text}}</span>
+{% endif %}
+{% if rightIcon %}
+    {% render '@icon', rightIcon, true %}
+{% endif %}
+</{{tag}}>
