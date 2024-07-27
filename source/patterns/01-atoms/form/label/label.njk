@@ -1,5 +1,5 @@
-<label
-    for="{{id}}"
-    class="form-label{% if class %} {{class}}{% endif %}">
-{{label|safe}}
-</label>
+{% if floating %}
+<label for="{{id}}"{% if class %} class="{{class}}"{% endif %}>{{text|safe}}</label>
+{% else %}
+<label for="{{id}}" class="form-label{% if modifier %} form-label-{{modifier}}{% endif %}{% if class %} {{class}}{% endif %}">{{text|safe}}</label>
+{% endif %}

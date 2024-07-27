@@ -1,0 +1,13 @@
+context:
+    color: primary
+    modifier: grow
+    icon:
+        color: light
+
+variants:
+    -
+        name: spin
+        context:
+            modifier: border
+            icon:
+                color: primary

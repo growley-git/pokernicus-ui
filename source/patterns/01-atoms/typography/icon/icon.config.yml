@@ -1,4 +1,5 @@
 context:
   icon: cards-playing
+  color: null
   family: mdi
   prefix: true

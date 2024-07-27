@@ -32,3 +32,5 @@ variants:
         name: breadcrumb
         context:
             breadcrumb: true
+    -
+        name: pagination

@@ -25,6 +25,9 @@
         {% render '@button', button, true %}
         {% endfor %}
     </div>
+    {% if list %}
+        {% render '@list--group', list, true %}
+    {% endif %}
     {% if footer %}
     <div class="card-footer">
         {% if footer.content %}

@@ -1,0 +1,57 @@
+context:
+    src: https://via.placeholder.com/1280x720.png?text=16:9
+    alt: 16:9 Image
+    responsive: false
+
+variants:
+    -
+        name: thumbnail
+        context:
+            src: https://via.placeholder.com/250x250.png?text=Thumbnail
+            alt: 1:1 Thumbnail
+            thumbnail: true
+    -
+        name: figure
+        context:
+            src: https://via.placeholder.com/533x300.png?text=Figure
+            alt: 16:9 Figure
+            figure: true
+            caption: Magna pariatur elit nostrud exercitation nulla.
+    -
+        name: picture
+        context:
+            src: https://via.placeholder.com/400x255.png?text=Mobile Picture
+            alt: Dynamic Picture
+            picture: true
+            srcset:
+                -
+                    src: https://via.placeholder.com/800x450.png?text=Tablet Picture
+                    query: 'min-width:768px'
+                -
+                    src: https://via.placeholder.com/1600x900.png?text=Desktop Picture
+                    query: 'min-width:992px'
+                
+    -
+        name: '1x1'
+        label: '1:1'
+        context:
+            src: https://via.placeholder.com/100x100.png?text=1:1
+            alt: 1:1 Image
+    -
+        name: '3x2'
+        label: '3:2'
+        context:
+            src: https://via.placeholder.com/300x200.png?text=3:2
+            alt: 3:2 Image
+    -
+        name: '4x3'
+        label: '4:3'
+        context:
+            src: https://via.placeholder.com/400x300.png?text=4:3
+            alt: 4:3 Image
+    -
+        name: '16x9'
+        label: '16:9'
+        context:
+            src: https://via.placeholder.com/1280x720.png?text=16:9
+            alt: 16:9 Image

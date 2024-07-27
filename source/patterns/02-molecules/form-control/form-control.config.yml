@@ -1,11 +1,21 @@
 context:
+    margin: 3
     inline: false
+    floating: false
+    label:
+        id: input
+    input:
+        id: input
 variants:
     -
         name: inline
         context:
             inline: true
+            label:
+                class: mb-0
     -
         name: floating
         context:
-            inline: false
+            floating: true
+            label:
+                floating: true

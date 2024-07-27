@@ -1,0 +1,6 @@
+<div class="loading">
+    <div class="spinner-{{modifier}}{% if color %} text-{{color}}{% endif %}{% if class %} {{class}}{% endif %}" role="status" aria-label="Loading"></div>
+    {% if icon %}
+    {% render '@icon', icon, true %}
+    {% endif %}
+</div>

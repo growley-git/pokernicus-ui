@@ -1,17 +1,38 @@
 context:
     class: col-4
-    header: Cupidatat do eiusmod
     image:
         src: https://via.placeholder.com/200x100.png
         alt: Card Image
+    header: null
     title: Cupidatat proident dolore
     text: Consectetur excepteur tempor dolor dolor duis officia sunt consequat magna. Ea culpa laboris mollit minim nisi incididunt dolor. Mollit elit Lorem est reprehenderit duis nulla aliqua ipsum incididunt.
     links: null
-    buttons:
-        -
-            modifier: primary
-            text: Duis non fugiat
-        -
-            modifier: danger
-            text: Cillum
-    footer: Cillum dolore irure culpa deserunt.
+    buttons: null
+    footer: null
+
+variants:
+    -
+        name: Kitchen Sink
+        context:
+            class: col-4
+            image:
+                src: https://via.placeholder.com/200x100.png
+                alt: Card Image
+            header: Cupidatat do eiusmod
+            title: Cupidatat proident dolore
+            text: Consectetur excepteur tempor dolor dolor duis officia sunt consequat magna. Ea culpa laboris mollit minim nisi incididunt dolor. Mollit elit Lorem est reprehenderit duis nulla aliqua ipsum incididunt.
+            list:
+                class: list-group-flush
+                items:
+                    - Item One
+                    - Item Two
+                    - Item Three
+            links: null
+            buttons:
+                -
+                    modifier: primary
+                    text: Duis non fugiat
+                -
+                    modifier: danger
+                    text: Cillum
+            footer: Cillum dolore irure culpa deserunt.

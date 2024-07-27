@@ -1,13 +1,20 @@
-<div class="mb-3{% if inline %} row align-items-center{% endif %}">
-    {% if inline %}
+{% if floating %}
+<div class="mb-{{margin}} form-floating">
+    {% render '@input', input, true %}
+    {% render '@label', label, true %}
+</div>
+{% elif inline %}
+<div class="mb-{{margin}} row align-items-center">
     <div class="col col-auto">
         {% render '@label', label, true %}
     </div>
     <div class="col">
         {% render '@input', input, true %}
     </div>
-    {% else %}
+</div>
+{% else %}
+<div class="mb-{{margin}}">
     {% render '@label', label, true %}
     {% render '@input', input, true %}
-    {% endif %}
 </div>
+{% endif %}

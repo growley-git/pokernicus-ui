@@ -2,7 +2,7 @@
     {% if id %}id="{{id}}"{% endif %}
     {% if type %}type="{{type}}"{% endif %}
     {% if name %}name="{{name}}"{% endif %}
-    class="form-control{% if class %} {{class}}{% endif %}"
+    class="form-control{% if type == 'color' %} form-control-color{% endif %}{% if class %} {{class}}{% endif %}"
     {% if min %}min="{{min}}"{% endif %}
     {% if max %}max="{{max}}"{% endif %}
     {% if step %}step="{{step}}"{% endif %}

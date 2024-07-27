@@ -1,0 +1,21 @@
+{% if responsive %}
+<img src="{{src}}" alt="{{alt}}" class="img-fluid{% if class %} {{class}}{% endif %}"{% if role %} role="{{role}}"{% endif %}>
+{% elif thumbnail %}
+<img src="{{src}}" alt="{{alt}}" class="img-thumbnail{% if class %} {{class}}{% endif %}"{% if role %} role="{{role}}"{% endif %}>
+{% elif figure %}
+<figure class="figure">
+    <img src="{{src}}" alt="{{alt}}" class="figure-img{% if class %} {{class}}{% endif %}"{% if role %} role="{{role}}"{% endif %}>
+    {% if caption %}
+    <figcaption class="figure-caption">{{caption|safe}}</figcaption>
+    {% endif %}
+</figure>
+{% elif picture %}
+<picture class="picture">
+    {% for item in srcset %}
+    <source media="({{item.query}})" srcset="{{item.src}}">
+    {% endfor %}
+    <img src="{{src}}" alt="{{alt}}"{% if class %} class="{{class}}"{% endif %}{% if role %} role="{{role}}"{% endif %}>
+</picture>
+{% else %}
+<img src="{{src}}" alt="{{alt}}"{% if class %} class="{{class}}"{% endif %}{% if role %} role="{{role}}"{% endif %}>
+{% endif %}

@@ -11,3 +11,6 @@
     {% if readonly %}readonly{% endif %}>
 {{value | safe}}
 </textarea>
+{% if wordcount and maxlength %}
+<div class="form-control-wordcount">{{value|length}}/{{maxlength}}</div>
+{% endif %}

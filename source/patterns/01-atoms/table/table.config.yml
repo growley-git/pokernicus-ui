@@ -1,0 +1,47 @@
+context:
+    head:
+        -
+            - '#'
+            - Exercitation
+            - Laborum
+            - Ea dolore
+    body:
+        -
+            - 1
+            - Culpa
+            - Magna
+            - Est voluptate
+        -
+            - 2
+            - Elit
+            - Excepteur
+            - Ea sit
+        -
+            - 3
+            - Dolore
+            - Laboris
+            - Cupidatat
+    foot:
+        -
+            - Minim
+            - Laborum
+            - Mollit
+            - Exercitation
+
+variants:
+    -
+        name: striped
+        context:
+            modifier: striped
+    -
+        name: hoverable
+        context:
+            modifier: hover
+    -
+        name: bordered
+        context:
+            modifier: bordered
+    -
+        name: small
+        context:
+            modifier: sm
