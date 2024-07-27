@@ -1,7 +1,11 @@
 context:
-
+    inline: false
 variants:
-  -
-    name: inline
-    context:
-      inline: true
+    -
+        name: inline
+        context:
+            inline: true
+    -
+        name: floating
+        context:
+            inline: false

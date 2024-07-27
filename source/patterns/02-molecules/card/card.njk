@@ -1,13 +1,37 @@
-<div class="card">
+<div class="card{% if modifier %} card-{{modifier}}{% endif %}{% if class %} {{class}}{% endif %}">
     {% if image %}
     <img src="{{image.src}}" class="card-img-top" alt="{{image.alt}}">
     {% endif %}
-    <div class="card-body">
-        {% if title %}
-        <h5 class="card-title">{{title}}</h5>
-        {% endif %}
-        {% if text %}
-        <p class="card-text">{{text}}</p>
+    {% if header %}
+    <div class="card-header">
+        {% if header.content %}
+        {% render header.content %}
+        {% else %}
+        {{header|safe}}
         {% endif %}
     </div>
+    {% endif %}
+    <div class="card-body">
+        {% if title %}
+        <h5 class="card-title">{{title|safe}}</h5>
+        {% endif %}
+        {% if text %}
+        <p class="card-text">{{text|safe}}</p>
+        {% endif %}
+        {% for link in links %}
+        <a href="{{link.href}}" class="card-link"{% if target %} target="{{target}}"{% endif %}>{{link.text|safe}}</a>
+        {% endfor %}
+        {% for button in buttons %}
+        {% render '@button', button, true %}
+        {% endfor %}
+    </div>
+    {% if footer %}
+    <div class="card-footer">
+        {% if footer.content %}
+        {% render footer.content %}
+        {% else %}
+        {{footer|safe}}
+        {% endif %}
+    </div>
+    {% endif %}
 </div>

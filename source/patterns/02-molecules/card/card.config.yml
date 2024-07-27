@@ -1,6 +1,17 @@
 context:
+    class: col-4
+    header: Cupidatat do eiusmod
     image:
-        src: https://via.placeholder.com/200x170.png
+        src: https://via.placeholder.com/200x100.png
         alt: Card Image
     title: Cupidatat proident dolore
     text: Consectetur excepteur tempor dolor dolor duis officia sunt consequat magna. Ea culpa laboris mollit minim nisi incididunt dolor. Mollit elit Lorem est reprehenderit duis nulla aliqua ipsum incididunt.
+    links: null
+    buttons:
+        -
+            modifier: primary
+            text: Duis non fugiat
+        -
+            modifier: danger
+            text: Cillum
+    footer: Cillum dolore irure culpa deserunt.

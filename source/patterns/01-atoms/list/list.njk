@@ -1,0 +1,17 @@
+<{{tag}}{% if modifier or class %} class="{% if modifier %}{{modifier}}{% endif %}{% if class %} {{class}}{% endif %}"{% endif %}>
+{% for item in items %}
+    <li{% if modifier %} class="{{itemModifier}}{% if item.active %} active{% endif %}{% if item.disabled %} disabled{% endif %}"{% endif %}{% if disabled %} aria-disabled="true"{% endif %}>
+        {% if item.text %}
+            {% if item.iconLeft %}
+            {% render '@icon', iconLeft, true %}
+            {% endif %}
+            {{item.text|safe}}
+            {% if item.iconRight %}
+            {% render '@icon', iconRight, true %}
+            {% endif %}
+        {% else %}
+        {{item|safe}}
+        {% endif %}
+    </li>
+{% endfor %}
+</{{tag}}>

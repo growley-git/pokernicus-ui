@@ -76,7 +76,7 @@ fractal.components.set('statuses', {
         color: "green"
     }
 })
-fractal.components.set('default.context', data)
+// fractal.components.set('default.context', data)
 fractal.components.set('default.status', 'prototype')
 fractal.components.set('ext', '.njk')
 fractal.components.engine(nunjucks)
