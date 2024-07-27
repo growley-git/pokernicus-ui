@@ -1,0 +1,5 @@
+context:
+    currentBlind: 100
+    incomingBlind: 200
+    progress:
+        modifier: primary

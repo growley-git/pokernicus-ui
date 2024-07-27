@@ -1,0 +1,62 @@
+context:
+    form:
+        fields:
+            -
+                label:
+                    id: eventName
+                    text: Event Name
+                input:
+                    id: eventName
+                    type: text
+                    placeholder: Texas Hold'em, New Players Welcome!
+            -
+                label:
+                    id: description
+                    text: Description
+                input:
+                    id: description
+                    type: textarea
+            -
+                label:
+                    id: mode
+                    text: Game Mode
+                input:
+                    id: mode
+                    type: select
+                    options:
+                        open: Drop In Play
+                        league: League Play
+                        bounty: Bounty Hunt
+                        tourney: Tournament
+            -
+                label:
+                    id: date
+                    text: Event Start Date
+                input:
+                    id: date
+                    type: date
+            -
+                label:
+                    id: time
+                    text: Event Start Time
+                input:
+                    id: time
+                    type: time
+            -
+                label:
+                    id: capacity
+                    text: Maximum Capacity
+                input:
+                    id: capacity
+                    type: number
+                    min: 9
+                    step: 9
+            -
+                label: false
+                input: false
+                button:
+                    text: Submit Event
+                    modifier: success
+                    iconRight:
+                        icon: send
+

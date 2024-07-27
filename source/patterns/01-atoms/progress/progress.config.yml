@@ -1,7 +1,7 @@
 context:
   min: 0
   max: 100
-  now: 50
+  now: 0
 
 variants:
   -

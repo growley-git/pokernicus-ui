@@ -1,6 +1,17 @@
 <footer class="bg-light py-5 mt-5">
     <div class="container-fluid">
-        <div class="row">
+        <div class="row justify-content-between">
+            {% if not user %}
+            <div class="col-12 col-md-4 col-xl-3">
+                {% render '@list--unstyled' %}
+                {% render '@list--unstyled' %}
+            </div>
+            <div class="col-12 col-md-4 col-xl-3">
+                {% render '@list--unstyled' %}
+                {% render '@list--unstyled' %}
+            </div>
+            {% else %}
+            {% endif %}
             <div class="col-12 col-md-4 col-xl-3">
                 {% render '@logo' %}
                 {% if social %}    
@@ -13,17 +24,6 @@
                 </nav>
                 {% endif %}
             </div>
-            {% if not user %}
-            <div class="col-12 col-md-4 col-xl-3">
-                {% render '@list--unstyled' %}
-                {% render '@list--unstyled' %}
-            </div>
-            <div class="col-12 col-md-4 col-xl-3">
-                {% render '@list--unstyled' %}
-                {% render '@list--unstyled' %}
-            </div>
-            {% else %}
-            {% endif %}
         </div>
     </div>
 </footer>

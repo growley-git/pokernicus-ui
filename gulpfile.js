@@ -117,13 +117,13 @@ const scriptsBuild = function () {
     return src(['./source/assets/scripts/*.js','./source/patterns/**/*.js'], { allowEmpty: true })
         .pipe(webpack({
             mode: 'production',
-            entry: {
-                styleguide: './source/assets/scripts/styleguide.js',
-                scripts: './source/assets/scripts/scripts.js',
-            },
+            // entry: {
+            //     styleguide: './source/assets/scripts/styleguide.js',
+            //     scripts: './source/assets/scripts/scripts.js',
+            // },
             output: {
                 path: path.join(__dirname, './public/js'),
-                filename: '[name].js',
+                filename: 'scripts.js',
             },
             resolve: {
                 modules: [

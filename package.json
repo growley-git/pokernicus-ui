@@ -28,6 +28,7 @@
         "@frctl/nunjucks": "^2.0.15",
         "@mdi/font": "^7.4.47",
         "bootstrap": "^5.3.3",
+        "gulp-mjml": "^4.0.2",
         "jquery": "^3.7.1"
     }
 }
