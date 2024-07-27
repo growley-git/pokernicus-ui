@@ -1,0 +1,6 @@
+context:
+    role: player
+    chips: 2198493
+    avatar:
+        src: https://api.dicebear.com/9.x/identicon/svg
+    username: p0k3rn1cu$

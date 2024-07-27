@@ -1,0 +1,9 @@
+<div class="container container-lg{% if class %} {{class}}{% endif %}">
+    <div class="row">
+        {% for event in events %}
+        <div class="mb-4 col-12{% for col in event.columns %} col-{{col}}{% endfor %}">{% render '@card', event, true %}</div>
+        {% endfor %}
+        <div class="mb-4 col-12{% for col in promo.columns %} col-{{col}}{% endfor %}">{% render '@card', promo, true %}</div>
+        <div class="mb-4 col-12{% for col in cta.columns %} col-{{col}}{% endfor %}">{% render '@card', cta, true %}</div>
+    </div>
+</div>

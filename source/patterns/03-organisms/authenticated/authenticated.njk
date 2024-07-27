@@ -1,0 +1,24 @@
+<div class="dropdown">
+    <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        {% if avatar %}
+        <img src="{{avatar.src}}?seed={{username}}" alt="{{username}} avatar" class="img-thumbnail" width="32" height="32">
+        {% endif %}
+        <span class="d-inline-block ms-2">{{username}}</span>
+    </button>
+    <ul class="dropdown-menu">
+        {% if chips %}
+        <li>
+            <span class="dropdown-item">{% render '@icon', { 'icon': 'crown-circle' }, true %}{{chips}}</span>
+        </li>
+        <li><hr class="dropdown-divider"></li>
+        {% endif %}
+        <li><a class="dropdown-item" href="#">Dashboard</a></li>
+        <li><a class="dropdown-item" href="#">Account</a></li>
+        <li><a class="dropdown-item" href="#">Security &amp; Privacy</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Sign Out</a></li>
+    </ul>
+    <div class="d-block position-absolute top-0 start-0 translate-middle">
+        {% render '@badge--primary', { "text": role }, true %}
+    </div>
+</div>

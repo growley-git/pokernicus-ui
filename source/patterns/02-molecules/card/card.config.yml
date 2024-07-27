@@ -27,7 +27,10 @@ variants:
                     - Item One
                     - Item Two
                     - Item Three
-            links: null
+            links:
+                -
+                    href: '#'
+                    text: Id esse sit aute...
             buttons:
                 -
                     modifier: primary

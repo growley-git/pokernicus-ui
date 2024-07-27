@@ -1,0 +1,25 @@
+context:
+    id: barChart
+    type: bar
+
+variants:
+    -
+        name: area
+        context:
+            id: areaChart
+            type: area
+    -
+        name: bubble
+        context:
+            id: bubbleChart
+            type: bubble
+    -
+        name: doughnut
+        context:
+            id: doughnutChart
+            type: doughnut
+    -
+        name: line
+        context:
+            id: lineChart
+            type: line

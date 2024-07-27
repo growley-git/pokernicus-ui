@@ -1,20 +1,87 @@
-{% if floating %}
+{#
+{% macro field(fld) %}
+{% if fld.type == 'radio' %}
+{% render '@radio', fld, true %}
+{% elif fld.type == 'checkbox' %}
+{% render '@checkbox', fld, true %}
+{% elif fld.type == 'select' %}
+{% render '@select', fld, true %}
+{% elif fld.type == 'switch' %}
+{% render '@switch', fld, true %}
+{% elif fld.type == 'textarea' %}
+{% render '@textarea', fld, true %}
+{% else %}
+{% render '@input', fld, true %}
+{% endif %}
+{% endmacro %}
+#}
+{% if button %}
+{% render '@button', button, true %}
+{% elif floating %}
 <div class="mb-{{margin}} form-floating">
+    {% if input.type == 'radio' %}
+    {% render '@radio', input, true %}
+    {% elif input.type == 'checkbox' %}
+    {% render '@checkbox', input, true %}
+    {% elif input.type == 'select' %}
+    {% render '@select', input, true %}
+    {% elif input.type == 'switch' %}
+    {% render '@switch', input, true %}
+    {% elif input.type == 'range' %}
+    {% render '@range', input, true %}
+    {% elif input.type == 'textarea' %}
+    {% render '@textarea', input, true %}
+    {% else %}
     {% render '@input', input, true %}
+    {% endif %}
+    {% if label %}
     {% render '@label', label, true %}
+    {% endif %}
 </div>
 {% elif inline %}
 <div class="mb-{{margin}} row align-items-center">
+    {% if label %}
     <div class="col col-auto">
         {% render '@label', label, true %}
     </div>
+    {% endif %}
     <div class="col">
+        {% if input.type == 'radio' %}
+        {% render '@radio', input, true %}
+        {% elif input.type == 'checkbox' %}
+        {% render '@checkbox', input, true %}
+        {% elif input.type == 'select' %}
+        {% render '@select', input, true %}
+        {% elif input.type == 'switch' %}
+        {% render '@switch', input, true %}
+        {% elif input.type == 'range' %}
+        {% render '@range', input, true %}
+        {% elif input.type == 'textarea' %}
+        {% render '@textarea', input, true %}
+        {% else %}
         {% render '@input', input, true %}
+        {% endif %}
     </div>
 </div>
 {% else %}
 <div class="mb-{{margin}}">
+    {% if label %}
     {% render '@label', label, true %}
+    {% endif %}
+    {% if input.type == 'radio' %}
+    {% render '@radio', input, true %}
+    {% elif input.type == 'checkbox' %}
+    {% render '@checkbox', input, true %}
+    {% elif input.type == 'select' %}
+    {% render '@select', input, true %}
+    {% elif input.type == 'switch' %}
+    {% render '@switch', input, true %}
+    {% elif input.type == 'range' %}
+    {% render '@range', input, true %}
+    {% elif input.type == 'textarea' %}
+    {% render '@textarea', input, true %}
+    {% else %}
     {% render '@input', input, true %}
+    {% endif %}
 </div>
 {% endif %}

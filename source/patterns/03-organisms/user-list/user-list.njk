@@ -1,0 +1,40 @@
+<div class="user-list">
+    <div class="card">
+        {% if header %}
+        <div class="card-header">
+            {% if header.content %}
+            {% render header.content %}
+            {% else %}
+            {{header|safe}}
+            {% endif %}
+        </div>
+        {% endif %}
+        {% if users %}    
+        <ul class="list-group list-group-flush">
+            {% for user in users %}
+            <li class="list-group-item">
+                <div class="d-flex align-items-center">
+                    {% render '@image--avatar', { 'class': 'ms-n2', 'seed': user.username }, true %}
+                    <div class="ms-2 w-100 d-flex">
+                        <div class="me-auto">{{user.username}}</div>
+                        {% if user.chips %}
+                        <div class="ms-2">
+                            {% render '@icon', { 'icon': 'crown-circle' }, true %}
+                            {{user.chips}}
+                        </div>
+                        {% endif %}
+                        {% if user.role %}
+                        <div class="ms-2">{% render '@badge--primary', { 'text': user.role }, true %}</div>
+                        {% endif %}
+                    </div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <div class="card-body">
+            <p class="card-text text-muted text-center">{{empty|safe}}</p>
+        </div>
+        {% endif %}
+    </div>
+</div>

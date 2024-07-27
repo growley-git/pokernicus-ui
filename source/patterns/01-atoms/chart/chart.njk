@@ -1,0 +1,87 @@
+<div>
+    <canvas id="{{id}}"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+new Chart(document.getElementById('{{id}}'), {
+    type: '{{type}}',
+    data: {
+        {% if type == 'bar' %}
+        labels: ['Mar', 'Apr', 'May', 'June', 'July', 'Aug'],
+        datasets: [{
+            label: '# of Players',
+            data: [36, 18, 9, 18, 45, 54],
+            borderWidth: 1
+        }]
+        {% endif %}
+
+        {% if type == 'bubble' %}
+        datasets: [{
+            label: 'Chip Conversion',
+            data: [
+                {
+                    x: 0,
+                    y: 0,
+                    r: 0
+                },
+                {
+                    x: 1000,
+                    y: 22,
+                    r: 20
+                },
+                {
+                    x: 5000,
+                    y: 8,
+                    r: 10
+                },
+                {
+                    x: 10000,
+                    y: 3,
+                    r: 5
+                }
+                ,
+                {
+                    x: 20000,
+                    y: 3,
+                    r: 2
+                }
+            ],
+            backgroundColor: 'rgb(255, 99, 132)'
+        }]
+        {% endif %}
+    
+        {% if type == 'doughnut' %}
+        labels: [
+            '0 Chips',
+            '~10k Chips',
+            '~100k Chips',
+            '~1m Chips',
+            '+1m Chips'
+        ],
+        datasets: [{
+            // label: 'My First Dataset',
+            data: [10, 24, 5, 14, 1],
+            backgroundColor: [
+                'rgb(220, 53, 69)',
+                'rgb(253, 126, 20)',
+                'rgb(255, 193, 7)',
+                'rgb(25, 135, 84)',
+                'rgb(111, 66, 193)'
+            ],
+            hoverOffset: 4
+        }]
+        {% endif %}
+    },
+    options: {
+        {% if type == 'bar' %}
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+        {% endif %}
+    }
+  });
+</script>

@@ -1,0 +1,26 @@
+order: 1
+preview: '@application'
+context:
+    type: player
+
+variants:
+    -
+        name: staff
+        context:
+            type: staff
+    -
+        name: director
+        context:
+            type: director
+    -
+        name: venue
+        context:
+            type: venue
+    -
+        name: event
+        context:
+            type: event
+    -
+        name: admin
+        context:
+            type: admin

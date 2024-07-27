@@ -1,0 +1,71 @@
+context:
+    class: null
+    cta:
+        foo: bar
+        class: h-100 shadow-sm
+        title: null
+        text: null
+        columns:
+            - md-12
+            - lg-8
+            - xl-12
+    promo:
+        foo: bar
+        class: h-100 shadow-sm
+        title: null
+        text: null
+        columns:
+            - md-6
+            - lg-4
+    events:
+        -
+            foo: bar
+            class: h-100 shadow-sm
+            columns:
+                - md-12
+                - lg-7
+                - xl-5
+        -
+            foo: bar
+            class: h-100 shadow-sm
+            columns:
+                - md-6
+                - lg-5
+                - xl-4
+        -
+            foo: bar
+            class: h-100 shadow-sm
+            columns:
+                - md-6
+                - lg-4
+                - xl-3
+        -
+            foo: bar
+            class: h-100 shadow-sm
+            columns:
+                - md-6
+                - lg-4
+        -
+            foo: bar
+            class: h-100 shadow-sm
+            columns:
+                - md-6
+                - lg-4
+        -
+            foo: bar
+            class: h-100 shadow-sm
+            columns:
+                - md-6
+                - lg-4
+        -
+            foo: bar
+            class: h-100 shadow-sm
+            columns:
+                - md-6
+                - lg-4
+        -
+            foo: bar
+            class: h-100 shadow-sm
+            columns:
+                - md-6
+                - lg-4

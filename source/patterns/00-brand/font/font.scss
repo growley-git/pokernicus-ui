@@ -1,0 +1,11 @@
+.font {
+    &-head {
+        font-family: $headings-font-family;
+    }
+    &-base {
+        font-family: $font-family-sans-serif;
+    }
+    &-code {
+        font-family: $font-family-monospace;
+    }
+}

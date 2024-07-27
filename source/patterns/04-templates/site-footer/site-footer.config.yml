@@ -1,0 +1,21 @@
+context:
+    user: false
+    social:
+        -
+            icon: twitter
+            name: Twitter
+            href: '#'
+        -
+            icon: facebook
+            name: Facebook
+            href: '#'
+        -
+            icon: instagram
+            name: Instagram
+            href: '#'
+
+variants:
+    -
+        name: authenticated
+        context:
+            user: true

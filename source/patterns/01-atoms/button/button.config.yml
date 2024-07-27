@@ -42,14 +42,14 @@ variants:
         context:
             modifier: dark
     -
+        name: disabled
+        context:
+            disabled: true
+            modifier: primary
+    -
         name: icon
         context:
             icon: true
             text: null
             class: btn-icon
-            modifier: primary
-    -
-        name: disabled
-        context:
-            disabled: true
             modifier: primary

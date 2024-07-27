@@ -1,0 +1,62 @@
+{% if type == 'player' %}
+<h1>Player</h1>
+{% elif type == 'staff' %}
+<h1>Staff</h1>
+{% elif type == 'director' %}
+<div class="container pt-5">
+    <div class="row">
+        <div class="col-12">
+            <h1>TOURNAMENT DIRECTOR</h1>
+            <h2>Denver, CO</h2>
+        </div>
+        <div class="col-12 col-lg-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    {% render '@chart' %}
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    {% render '@chart--bubble' %}
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    {% render '@chart--doughnut' %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-lg-n5">
+        <div class="col-12 col-lg-8 mt-lg-n5">
+            <h2 class="mt-lg-n5">Region Users:</h2>
+            {% render '@user-list' %}
+        </div>
+        <div class="col-12 col-lg-4 mt-lg-5 pt-lg-3">
+            <a href="#" class="btn btn-secondary d-block mb-2">Start Event</a>
+            <a href="#" class="btn btn-secondary d-block mb-2">Blind Control</a>
+            <a href="#" class="btn btn-secondary d-block mb-2">End Event</a>
+            <div class="card mt-lg-1 mb-4">
+                <div class="card-header">Event Tools</div>
+                <div class="card-body">
+                    <a href="#" class="btn btn-secondary d-block mb-1">Register a Player</a>
+                    <a href="#" class="btn btn-secondary d-block mb-1">Check-in a Player</a>
+                    <a href="#" class="btn btn-secondary d-block mb-1">Table Assignments</a>
+                    <a href="#" class="btn btn-secondary d-block mb-1">Notify Staff</a>
+                    <a href="#" class="btn btn-secondary d-block">Notify Players</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% elif type == 'venue' %}
+<h1>Venue</h1>
+{% elif type == 'event' %}
+<h1>Event</h1>
+{% elif type == 'admin' %}
+<h1>Admin</h1>
+{% endif %}

@@ -5,6 +5,13 @@ context:
 
 variants:
     -
+        name: avatar
+        context:
+            src: https://api.dicebear.com/9.x/identicon/svg
+            seed: 8F5AB18B-0755-410A-B402-606024091594
+            size: 32
+            avatar: true
+    -
         name: thumbnail
         context:
             src: https://via.placeholder.com/250x250.png?text=Thumbnail

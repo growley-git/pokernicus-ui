@@ -6,8 +6,8 @@
     {% if name %}name="{{name}}"{% endif %}
     {% if target %}target="{{target}}"{% endif %}
     {% if disabled %}disabled aria-disabled="true"{% endif %}>
-{% if leftIcon %}
-    {% render '@icon', leftIcon, true %}
+{% if iconLeft %}
+    {% render '@icon', iconLeft, true %}
 {% endif %}
 {% if icon %}
     {% render '@icon', icon, true %}
@@ -15,7 +15,7 @@
 {% if text %}
     <span class="test">{{text}}</span>
 {% endif %}
-{% if rightIcon %}
-    {% render '@icon', rightIcon, true %}
+{% if iconRight %}
+    {% render '@icon', iconRight, true %}
 {% endif %}
 </{{tag}}>

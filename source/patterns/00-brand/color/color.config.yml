@@ -1,1 +1,38 @@
-order: 0
+order: 1
+collated: true
+context:
+    modifier: light
+
+variants:
+    -
+        name: primary
+        context:
+            modifier: primary
+    -
+        name: secondary
+        context:
+            modifier: secondary
+    -
+        name: success
+        context:
+            modifier: success
+    -
+        name: warning
+        context:
+            modifier: warning
+    -
+        name: danger
+        context:
+            modifier: danger
+    -
+        name: info
+        context:
+            modifier: info
+    -
+        name: light
+        context:
+            modifier: light
+    -
+        name: dark
+        context:
+            modifier: dark

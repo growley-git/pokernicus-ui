@@ -1,137 +1,55 @@
 context:
-  fields:
-    -
-        input:
-            id: firstName
-            name: firstName
-            type: text
-            required: true
-            autocomplete: off
-        label:
-            id: firstName
-            label: First Name
-            required: true
-        columns:
-            - sm-12
-            - md-4
-    -
-        input:
-            id: lastName
-            name: lastName
-            type: text
-            required: true
-            autocomplete: off
-        label:
-            id: lastName
-            label: Last Name
-            required: true
-        columns:
-            - sm-12
-            - md-4
-    -
-        input:
-            id: username
-            name: username
-            type: text
-            required: true
-            autocomplete: off
-        label:
-            id: username
-            label: Username
-            required: true
-        columns:
-            - sm-12
-            - md-4
-    -
-        input:
-            id: email
-            name: email
-            type: email
-            required: true
-            autocomplete: off
-        label:
-            id: email
-            label: E-mail Address
-            required: true
-        required: true
-        columns:
-            - sm-12
-            - md-6
-    -
-        input:
-            id: dob
-            name: dob
-            type: date
-            required: true
-            autocomplete: off
-        label:
-            id: dob
-            label: Date of Birth
-            required: true
-        columns:
-            - sm-12
-            - md-6
-    -
-        input:
-            id: password
-            name: password
-            type: password
-            required: true
-            autocomplete: off
-        label:
-            id: password
-            label: Password
-            required: true
-        columns:
-            - sm-12
-            - md-6
-    -
-        input:
-            id: confirm-password
-            name: confirm-password
-            type: password
-            required: true
-            autocomplete: off
-        label:
-            id: confirm-password
-            label: Confirm Password
-            required: true
-        columns:
-            - sm-12
-            - md-6
-    -
-        input:
-            id: accept-tos
-            name: accept-tos
-            type: checkbox
-            required: true
-        label:
-            id: accept-tos
-            label: Accept Terms of Service
-            required: true
-    -
-        input:
-            id: accept-priv
-            name: accept-priv
-            type: checkbox
-            required: true
-        label:
-            id: accept-priv
-            label: Accept Privacy Policy
-            required: true
-    -
-        type: button
-        text: Cancel
-        leftIcon:
-            icon: close
-        modifier: secondary
-        columns:
-            - md-auto
-    -
-        type: button
-        text: Sign Up
-        rightIcon:
-            icon: send
-        modifier: success
-        columns:
-            - md-auto
+    form:
+        fields:
+            -
+                label:
+                    id: firstName
+                    text: First Name
+                input:
+                    id: firstName
+                    type: text
+            -
+                label:
+                    id: lastName
+                    text: Last Name
+                input:
+                    id: lastName
+                    type: text
+            -
+                label:
+                    id: dob
+                    text: Date of Birth
+                input:
+                    id: dob
+                    type: date
+            -
+                label:
+                    id: email
+                    text: E-mail
+                input:
+                    id: email
+                    type: email
+            -
+                label:
+                    id: username
+                    text: Username
+                input:
+                    id: username
+                    type: text
+                    maxlength: 32
+            -
+                label:
+                    id: password
+                    text: Password
+                input:
+                    id: password
+                    type: password
+            -
+                label: false
+                input: false
+                button:
+                    text: Sign Up
+                    modifier: success
+                    iconRight:
+                        icon: arrow-right
+

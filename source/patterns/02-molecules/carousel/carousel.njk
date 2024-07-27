@@ -1,0 +1,38 @@
+<div id="{{id}}" class="carousel slide"{% if auto %} data-bs-ride="carousel"{% endif %}>
+    {% if dots %}
+    <div class="carousel-indicators">
+        {% for slide in slides %}    
+        <button type="button" data-bs-target="#{{id}}" data-bs-slide-to="{{loop.index}}"{% if loop.first %} class="active" aria-current="true"{% endif %} aria-label="Slide {{loop.index}}"></button>
+        {% endfor %}
+    </div>
+    {% endif %}
+    <div class="carousel-inner">
+        {% for slide in slides %}
+        <div class="carousel-item{% if loop.first %} active{% endif %}">
+            <img src="https://via.placeholder.com/1280x720.png?text=16:9" class="d-block w-100" alt="...">
+            {# <div class="carousel-caption d-none d-md-block mt-n5">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+            </div> #}
+        </div>
+        {% endfor %}
+    </div>
+    {% if nav %}
+    <button class="carousel-control-prev" type="button" data-bs-target="#{{id}}" data-bs-slide="prev">
+        {% if nav.iconPrev %}
+        {% render '@icon', iconPrev, true %}
+        {% else %}
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        {% endif %}
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#{{id}}" data-bs-slide="next">
+        {% if nav.iconNext %}
+        {% render '@icon', iconNext, true %}
+        {% else %}
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        {% endif %}
+        <span class="visually-hidden">Next</span>
+    </button>
+    {% endif %}
+</div>

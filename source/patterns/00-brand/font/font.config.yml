@@ -1,1 +1,21 @@
-order: 1
+order: 0
+collated: true
+context:
+    name: Heading
+    font: Montserrat
+    family: head
+    specimen: abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890~!@#$%^&*()?
+
+variants:
+    -
+        name: base
+        context:
+            font: Roboto
+            name: Default
+            family: base
+    -
+        name: code
+        context:
+            font: Roboto Mono
+            name: Monospace
+            family: code

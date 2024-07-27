@@ -1,1 +1,11 @@
 order: -1
+context:
+    src: https://via.placeholder.com/240x75.png
+    alt: Logo
+
+variants:
+    -
+        name: icon
+        context:
+            src: https://via.placeholder.com/48x48.png
+            alt: Logo Icon

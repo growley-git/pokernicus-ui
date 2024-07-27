@@ -4,8 +4,11 @@ context:
     floating: false
     label:
         id: input
+        text: Pariatur dolor
+
     input:
         id: input
+        type: text
 variants:
     -
         name: inline
@@ -13,9 +16,12 @@ variants:
             inline: true
             label:
                 class: mb-0
+            input:
+                type: date
     -
         name: floating
         context:
             floating: true
             label:
                 floating: true
+            

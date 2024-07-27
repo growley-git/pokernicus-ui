@@ -1,0 +1,59 @@
+context:
+    fields:
+        -
+            label:
+                id: a
+                text: Aliqua esse laboris
+            input:
+                id: a
+                type: text
+        -
+            label:
+                id: b
+                text: Pariatur
+            input:
+                id: b
+                type: select
+        -
+            label:
+                id: c
+                text: Officia pariatur
+            input:
+                id: c
+                type: textarea
+        -
+            label:
+                id: d
+                text: Non cupidatat cillum dolore ut ullamco amet.
+            input:
+                id: d
+                type: range
+        -
+            label: false
+            input:
+                id: e
+                type: radio
+                label: Ipsum aliquip non consectetur proident.
+        -
+            label: false
+            input:
+                id: f
+                type: checkbox
+                label: Exercitation non in reprehenderit qui qui non fugiat.
+        -
+            label: false
+            input:
+                id: g
+                type: switch
+                label: Non adipisicing?
+        -
+            label: false
+            input: false
+            button:
+                tag: button
+                type: submit
+                text: In ipsum ullamco
+                modifier: success
+                iconRight:
+                    icon: arrow-right
+        

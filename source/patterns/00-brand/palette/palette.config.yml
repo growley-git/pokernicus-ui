@@ -1,0 +1,66 @@
+order: 2
+collated: true
+context:
+    shades: false
+    modifier: black
+
+variants:
+    -
+        name: white
+        context:
+            modifier: white
+    -
+        name: gray
+        context:
+            shades: true
+            modifier: gray
+    -
+        name: cyan
+        context:
+            shades: true
+            modifier: cyan
+    -
+        name: blue
+        context:
+            shades: true
+            modifier: blue
+    -
+        name: indigo
+        context:
+            shades: true
+            modifier: indigo
+    -
+        name: purple
+        context:
+            shades: true
+            modifier: purple
+    -
+        name: pink
+        context:
+            shades: true
+            modifier: pink
+    -
+        name: red
+        context:
+            shades: true
+            modifier: red
+    -
+        name: yellow
+        context:
+            shades: true
+            modifier: yellow
+    -
+        name: orange
+        context:
+            shades: true
+            modifier: orange
+    -
+        name: teal
+        context:
+            shades: true
+            modifier: teal
+    -
+        name: green
+        context:
+            shades: true
+            modifier: green

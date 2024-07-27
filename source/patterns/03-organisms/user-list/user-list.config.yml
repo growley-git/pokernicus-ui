@@ -1,0 +1,39 @@
+context:
+    header: User List
+    empty: This user list is currently empty
+    users:
+        -
+            role: player
+            chips: 1838723
+            username: Cupidatat
+        -
+            role: player
+            chips: 48345
+            username: EstTempor
+        -
+            role: player
+            chips: 3458903821
+            username: Lorem
+        -
+            role: player
+            chips: 483
+            username: CulpaSint
+        -
+            role: player
+            chips: 34589
+            username: Reprehenderit
+        -
+            role: staff
+            username: Proident Irure
+        -
+            role: director
+            username: Do Duis
+        -
+            role: venue
+            username: Consequat Deserunt Exercitation
+        -
+            role: event
+            username: Ut cillum cillum labore excepteur do ea anim qui
+        -
+            role: admin
+            username: Amet Est

@@ -1,0 +1,12 @@
+context:
+    id: example
+    nav: true
+    dots: false
+    auto: true
+    slides:
+        -
+            text: Slide One
+        -
+            text: Slide Two
+        -
+            text: Slide Three

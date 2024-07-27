@@ -1,5 +1,7 @@
 {% if responsive %}
 <img src="{{src}}" alt="{{alt}}" class="img-fluid{% if class %} {{class}}{% endif %}"{% if role %} role="{{role}}"{% endif %}>
+{% elif avatar %}
+<img src="{{src}}?seed={{seed}}" alt="{{seed}} avatar" class="img-thumbnail rounded-circle{% if class %} {{class}}{% endif %}"{% if role %} role="{{role}}"{% endif %}{% if size %} width="{{size}}" height="{{size}}"{% endif %}>
 {% elif thumbnail %}
 <img src="{{src}}" alt="{{alt}}" class="img-thumbnail{% if class %} {{class}}{% endif %}"{% if role %} role="{{role}}"{% endif %}>
 {% elif figure %}

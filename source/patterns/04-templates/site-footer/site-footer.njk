@@ -1,0 +1,29 @@
+<footer class="bg-light py-5 mt-5">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-4 col-xl-3">
+                {% render '@logo' %}
+                {% if social %}    
+                <nav>
+                    {% for link in social %}
+                    <a class="btn btn-link" href="{{link.href}}" target="_blank" title="{{link.name}}">
+                        {% render '@icon', { icon: link.icon }, true %}
+                    </a>
+                    {% endfor %}
+                </nav>
+                {% endif %}
+            </div>
+            {% if not user %}
+            <div class="col-12 col-md-4 col-xl-3">
+                {% render '@list--unstyled' %}
+                {% render '@list--unstyled' %}
+            </div>
+            <div class="col-12 col-md-4 col-xl-3">
+                {% render '@list--unstyled' %}
+                {% render '@list--unstyled' %}
+            </div>
+            {% else %}
+            {% endif %}
+        </div>
+    </div>
+</footer>

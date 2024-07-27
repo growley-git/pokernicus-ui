@@ -1,0 +1,42 @@
+context:
+    form:
+        fields:
+            -
+                label:
+                    id: username
+                    text: E-mail/Username
+                input:
+                    id: username
+                    type: text
+                floating: true
+            -
+                label:
+                    id: password
+                    text: Password
+                input:
+                    id: password
+                    type: password
+                floating: true
+            -
+                label: false
+                input: false
+                button:
+                    text: Sign Up
+                    modifier: info
+                    iconRight:
+                        icon: account-plus
+            -
+                label: false
+                input: false
+                button:
+                    text: Sign In
+                    modifier: success
+                    iconRight:
+                        icon: arrow-right
+            -
+                label: false
+                input: false
+                button:
+                    text: Forgot Password?
+                    modifier: link
+

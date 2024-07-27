@@ -1,0 +1,19 @@
+<div class="sg-colors">
+    {% if shades %}
+    {% for shade in [100,200,300,400,500,600,700,800,900] %}
+    <div class="sg-color">
+        <div class="sg-color__chip bg-{{modifier}}-{{shade}}"></div>
+        <div class="sg-color__info">
+            <span><strong>SCSS:</strong> ${{modifier}}-{{shade}}</span>
+        </div>
+    </div>
+    {% endfor %}
+    {% else %}
+    <div class="sg-color">
+        <div class="sg-color__chip bg-{{modifier}}"></div>
+        <div class="sg-color__info">
+            <span><strong>SCSS:</strong> ${{modifier}}</span>
+        </div>
+    </div>
+    {% endif %}
+</div>

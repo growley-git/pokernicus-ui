@@ -18,11 +18,11 @@
         {% if text %}
         <p class="card-text">{{text|safe}}</p>
         {% endif %}
-        {% for link in links %}
-        <a href="{{link.href}}" class="card-link"{% if target %} target="{{target}}"{% endif %}>{{link.text|safe}}</a>
-        {% endfor %}
         {% for button in buttons %}
         {% render '@button', button, true %}
+        {% endfor %}
+        {% for link in links %}
+        <a href="{{link.href}}" class="card-link"{% if link.target %} target="{{link.target}}"{% endif %}>{{link.text|safe}}</a>
         {% endfor %}
     </div>
     {% if list %}

@@ -1,0 +1,14 @@
+context:
+    user: false
+    buttons:
+        -
+            text: Sign Up
+            modifier: info
+        -
+            text: Sign In
+            modifier: primary
+variants:
+    -
+        name: authenticated
+        context:
+            user: true
