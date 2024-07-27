@@ -1,5 +1,5 @@
 context:
-    class: col-4
+    class: col-12 col-md-4 col-xl-3
     image:
         src: https://via.placeholder.com/200x100.png
         alt: Card Image
@@ -14,7 +14,7 @@ variants:
     -
         name: Kitchen Sink
         context:
-            class: col-4
+            class: col-12 col-md-4 col-xl-3
             image:
                 src: https://via.placeholder.com/200x100.png
                 alt: Card Image

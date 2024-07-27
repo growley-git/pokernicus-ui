@@ -1,2 +1,10 @@
 order: 0
 preview: '@application'
+context:
+    chipsMenu:
+        button:
+            text: Get More Chips
+            class: d-block w-100
+            iconLeft:
+                icon: crown-circle
+            modifier: primary

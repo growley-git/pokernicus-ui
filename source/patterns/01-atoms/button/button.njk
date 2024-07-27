@@ -5,7 +5,8 @@
     {% if role %}role="{{role}}"{% endif %}
     {% if name %}name="{{name}}"{% endif %}
     {% if target %}target="{{target}}"{% endif %}
-    {% if disabled %}disabled aria-disabled="true"{% endif %}>
+    {% if disabled %}disabled aria-disabled="true"{% endif %}
+    {% for var, val in data %} data-{{var}}="{{val}}"{% endfor %}>
 {% if iconLeft %}
     {% render '@icon', iconLeft, true %}
 {% endif %}

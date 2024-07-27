@@ -1,1 +1,49 @@
-<h1>EVENT DETAIL</h1>
+<div class="container pt-5">
+    <div class="row">
+        <div class="col-12">
+            <h1>Mike's Bounty Hunt</h1>
+            <h2>Mike's Bee Bar</h2>
+            <h3>12345 W. Hive Street, San Antonio, TX 12345</h3>
+            <h4>Thursday, March 19th @ 8:00PM CST</h4>
+            <div class="mb-2">
+                {% render '@badge--info', { 'text': 'Drop In' }, true %}
+                {% render '@badge--success', { 'text': 'New Member Event' }, true %}
+                {% render '@badge--warning', { 'text': 'Bounty Hunt' }, true %}
+                {% render '@badge--danger', { 'text': 'Moderate Skill' }, true %}
+            </div>
+            <p class="lead">"Sleep lightly, bounty hunter..." &ndash; Boba Fett</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {% render '@blind-timer' %}
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-lg-8">
+            <h3 class="h4">Players:</h3>
+            {% render '@user-list' %}
+            <h4 class="h4 mt-3">Staff:</h4>
+            {% render '@user-list' %}
+        </div>
+        <div class="col-12 col-lg-4 mt-lg-5">
+            <div class="mt-n2">
+            {% render '@modal', chipsMenu, true %}
+            </div>
+            {# <a href="#" class="btn btn-secondary d-block mt-n2 mb-2">Chips Menu</a>
+            <a href="#" class="btn btn-secondary d-block mb-2">Leave Event</a>
+            <a href="#" class="btn btn-secondary d-block mb-2">Check In</a> #}
+            <div class="card mt-lg-1 mb-4">
+                <div class="card-header">Event Tools</div>
+                <div class="card-body">
+                    <a href="#" class="btn btn-secondary d-block mb-1">Table Assignments</a>
+                    <a href="#" class="btn btn-secondary d-block mb-1">Current Limit/Blind</a>
+                    <a href="#" class="btn btn-secondary d-block mb-1">Leaderboard</a>
+                    <a href="#" class="btn btn-secondary d-block mb-1">Invite a Player</a>
+                    <a href="#" class="btn btn-secondary d-block mb-1">Notify Staff</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

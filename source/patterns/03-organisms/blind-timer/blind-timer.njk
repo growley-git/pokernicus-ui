@@ -1,4 +1,7 @@
-<div class="blind-timer" data-blind-start="07/27/24 1:00 AM" data-blind-length="{{1440 * 30}}">
+{# data-blind-start="07/27/24 1:00 AM" #}
+{# {{1440 * 30}} #}
+{% render '@alert--warning', { 'id': 'blind-timer-alert', 'class': 'z-3 position-fixed top-0 start-0', 'dismissible': true }, true %}
+<div class="blind-timer" data-blind-length="1" data-blind-alert="#blind-timer-alert">
     <div class="d-flex justify-content-between">
         <div class="d-inline-flex">{% render '@icon', { 'icon': 'crown-circle' }, true %}{{currentBlind}}</div>
         <div class="d-inline-flex">{{incomingBlind}}{% render '@icon', { 'icon': 'crown-circle' }, true %}</div>

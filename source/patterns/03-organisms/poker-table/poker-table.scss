@@ -1,0 +1,132 @@
+.poker-table {
+    $this: &;
+
+    border-radius: 150px;
+    display: inline-block;
+    width: 600px;
+    height: 300px;
+    margin-block: 48px;
+    position: relative;
+    z-index: 0;
+
+    &:before {
+        background-color: $green-500;
+        border: 18px solid $orange-700;
+        border-radius: 150px;
+        box-shadow: 0 0 16px rgba($black, 0.15);
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+    }
+
+    &:after {
+        border: 16px solid $orange-800;
+        border-radius: 150px;
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    &-inner {
+        display: block;
+        position: relative;
+        width: 600px;
+        height: 300px;
+
+        &:before {
+            content: '100';
+            font-size: 32px;
+            font-weight: bold;
+            opacity: 0.33;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &-dealer {
+        display: block;
+        background-color: $secondary;
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        top: -24px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+
+    &-player {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $primary;
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+
+        &--1 {
+            top: -16px;
+            left: 552px - 96px;
+        }
+
+        &--2 {
+            top: 100px - 24px;
+            left: 552px + 8px;
+        }
+    
+        &--3 {
+            top: 300px - 96px;
+            left: 552px;
+        }
+
+        &--4 {
+            top: auto;
+            bottom: -20px;
+            left: 300px - 24px;
+        }
+
+        &--5 {
+            top: auto;
+            bottom: -20px;
+            left: 150px - 24px;
+        }
+
+        &--6 {
+            top: auto;
+            bottom: -20px;
+            left: 450px - 24px;
+        }
+
+        &--7 {
+            top: 300px - 96px;
+            left: 0;
+        }
+        
+        &--8 {
+            top: 100px - 24px;
+            left: -8px;
+        }
+        
+        &--9 {
+            top: -16px;
+            left: 96px;
+        }
+    }
+}

@@ -13,4 +13,5 @@
     {% if autocomplete %}autocomplete="{{autocomplete}}"{% endif %}
     {% if value %}value="{{value}}"{% endif %}
     {% if required %}required{% endif %}
-    {% if readonly %}readonly{% endif %}>
+    {% if readonly %}readonly{% endif %}
+    {% for var, val in data %} data-{{var}}="{{val}}"{% endfor %}>

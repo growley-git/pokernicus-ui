@@ -1,0 +1,7 @@
+label: QRcode
+context:
+    fg: '#000000'
+    bg: '#FFFFFF'
+    size: 128
+    text: Cupidatat occaecat occaecat Lorem consectetur proident
+    class: img-thumbnail

@@ -1,0 +1,14 @@
+hidden: true
+context:
+    test: null
+    control:
+        input:
+            data:
+                ref: input
+    button:
+        tag: button
+        href: false
+        text: Remove
+        modifier: danger
+        data:
+            ref: removeButton

@@ -1,0 +1,11 @@
+context:
+    event:
+        title: Texas Hold'em Poker
+        tags:
+            - drop in
+        list:
+                class: list-group-flush
+                items:
+                    - Eds' Hideaway
+                    - 12/25/2024 8:00PM
+                    - 1234 W. Poker Street, Chicago IL 29382

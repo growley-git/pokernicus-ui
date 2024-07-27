@@ -1,0 +1,10 @@
+<div class="poker-table">
+    <div class="poker-table-inner">
+        <div class="poker-table-dealer"></div>
+        {% for player in players %}
+        <div class="poker-table-player poker-table-player--{{loop.index}}">
+            {% render '@image--avatar', { 'seed': player.username }, true %}
+        </div>
+        {% endfor %}
+    </div>
+</div>

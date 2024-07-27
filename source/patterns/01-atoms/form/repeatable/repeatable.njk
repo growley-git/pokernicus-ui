@@ -1,0 +1,50 @@
+{# <form class="repeatable-field-demo-form" action="" method="POST">
+    <h1>Vanilla JS Repeatable Field</h1> #}
+
+    <fieldset class="repeatable-field" data-component="field-repeater" data-props='
+      {
+          "maxRows": 10,
+          "inputName": "guests",
+          "labelText": "Guest"
+      }' tabindex="0">
+        <legend>
+            Guests
+        </legend>
+
+        <template id="repeatable-template">
+            {% render '@form-control', control, true %}
+            {% render '@button', button, true %}
+        </template>
+
+        <ol class="repeatable-field__rows" data-ref="rowList"></ol>
+
+        <div class="repeatable-field__bottom">
+            <span class="repeatable-field__limit-counter" data-ref="limitCounter"></span>
+
+            <button class="repeatable-field__add-button button" data-ref="addButton" type="button">
+                + Add guest
+            </button>
+        </div>
+    </fieldset>
+
+    {# <fieldset class="repeatable-field" data-component="field-repeater" data-props='
+      {
+          "maxRows": 5,
+          "inputName": "pets",
+          "labelText": "Pet"
+      }' tabindex="0">
+        <legend>
+            Pets
+        </legend>
+
+        <ol class="repeatable-field__rows" data-ref="rowList"></ol>
+
+        <div class="repeatable-field__bottom">
+            <span class="repeatable-field__limit-counter" data-ref="limitCounter"></span>
+
+            <button class="repeatable-field__add-button button" data-ref="addButton" type="button">
+                + Add pet
+            </button>
+        </div>
+    </fieldset> #}
+{# </form> #}

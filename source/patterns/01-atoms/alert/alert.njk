@@ -1,4 +1,4 @@
-<div class="alert{% if modifier %} alert-{{modifier}}{% endif %}{% if class %} {{class}}{% endif %}{% if dismissible %} alert-dismissible fade show{% endif %}" role="alert">
+<div{% if id %} id="{{id}}"{% endif %} class="alert{% if modifier %} alert-{{modifier}}{% endif %}{% if class %} {{class}}{% endif %}{% if dismissible %} alert-dismissible fade{% endif %}{% if show %} show{% endif %}" role="alert">
 {% if heading %}
     <{{heading.tag}} class="alert-heading">{{heading.text|safe}}</{{heading.tag}}>
 {% endif %}

@@ -38,5 +38,6 @@ variants:
   -
     name: dismissible
     context:
+      show: true
       dismissible: true
       modifier: primary
